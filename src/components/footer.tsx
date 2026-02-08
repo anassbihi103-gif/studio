@@ -1,0 +1,33 @@
+"use client";
+
+import React, { useState, useEffect } from 'react';
+
+const Footer = () => {
+  const [year, setYear] = useState<number | string>('...');
+
+  useEffect(() => {
+    setYear(new Date().getFullYear());
+  }, []);
+
+  return (
+    <footer className="py-12 border-t border-slate-900 bg-slate-950 text-slate-500">
+      <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div className="flex items-center space-x-2 opacity-50">
+          <div className="w-6 h-6 bg-slate-500 rounded-sm flex items-center justify-center font-bold text-xs text-slate-950">
+            V
+          </div>
+          <span className="text-sm font-bold tracking-tighter uppercase font-headline">VOLT3D Portfolio</span>
+        </div>
+        <p className="text-xs font-medium uppercase tracking-[0.2em] text-center">
+          © {year} Designed & Built for the Next Dimension
+        </p>
+        <div className="flex space-x-6 text-xs font-bold uppercase tracking-widest">
+          <a href="#" className="hover:text-white transition-colors">Privacy</a>
+          <a href="#" className="hover:text-white transition-colors">Terms</a>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

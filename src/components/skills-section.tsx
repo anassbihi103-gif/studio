@@ -1,0 +1,61 @@
+import React from 'react';
+import { Box, Cpu, Palette, Layers, Dna, Monitor } from 'lucide-react';
+import { Progress } from './ui/progress';
+
+const coreSkills = [
+  { name: 'High-Poly Sculpting', level: 95 },
+  { name: 'PBR Material Design', level: 90 },
+  { name: 'Real-time Lighting', level: 85 },
+  { name: 'Technical Art', level: 80 }
+];
+
+const softwareSkills = [
+  { name: "Blender", icon: <Box className="w-6 h-6" /> },
+  { name: "Unreal Engine", icon: <Cpu className="w-6 h-6" /> },
+  { name: "ZBrush", icon: <Palette className="w-6 h-6" /> },
+  { name: "Substance Painter", icon: <Layers className="w-6 h-6" /> },
+  { name: "Maya", icon: <Dna className="w-6 h-6" /> },
+  { name: "Cinema 4D", icon: <Monitor className="w-6 h-6" /> }
+];
+
+const SkillsSection = () => {
+  return (
+    <section id="about" className="py-24 bg-slate-900/30">
+      <div className="container mx-auto px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+          <div>
+            <h2 id="skills" className="text-4xl font-black mb-6 font-headline">THE TOOLBOX</h2>
+            <p className="text-slate-400 text-lg mb-8 leading-relaxed">
+              I leverage the power of industry-leading software combined with custom scripts and procedural workflows to deliver unmatched visual quality. My focus is on creating optimized, production-ready assets.
+            </p>
+            
+            <div className="space-y-6">
+              {coreSkills.map((skill) => (
+                <div key={skill.name}>
+                  <div className="flex justify-between mb-2">
+                    <span className="font-bold text-sm uppercase tracking-wider text-slate-300">{skill.name}</span>
+                    <span className="text-primary font-bold text-sm">{skill.level}%</span>
+                  </div>
+                  <Progress value={skill.level} className="h-1.5 [&>div]:bg-primary" />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+            {softwareSkills.map((skill, idx) => (
+              <div key={idx} className="p-6 rounded-2xl bg-slate-900 border border-slate-800 flex flex-col items-center justify-center text-center space-y-4 hover:border-primary/50 transition-colors group">
+                <div className="p-4 bg-slate-800 rounded-xl text-slate-400 group-hover:text-primary group-hover:bg-cyan-950/30 transition-all">
+                  {skill.icon}
+                </div>
+                <span className="text-sm font-bold uppercase tracking-tight">{skill.name}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default SkillsSection;

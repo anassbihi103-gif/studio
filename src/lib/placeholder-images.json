@@ -1,3 +1,52 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "Grayscale portrait for hero background",
+      "imageUrl": "https://images.unsplash.com/photo-1573849992442-071d7027bafd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwb3J0cmFpdCUyMGdyYXlzY2FsZXxlbnwwfHx8fDE3NzA1ODE2NDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "portrait grayscale"
+    },
+    {
+      "id": "project-1",
+      "description": "Cyberpunk Cityscape project",
+      "imageUrl": "https://images.unsplash.com/photo-1551771685-c367c9127a03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjeWJlcnB1bmslMjBjaXR5fGVufDB8fHx8MTc3MDUxNDg3MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cyberpunk city"
+    },
+    {
+      "id": "project-2",
+      "description": "Bio-Mechanical Construct project",
+      "imageUrl": "https://images.unsplash.com/photo-1742767069929-0c663150b164?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxiaW9tZWNoYW5pY2FsJTIwcm9ib3R8ZW58MHx8fHwxNzcwNTgxNjQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "biomechanical robot"
+    },
+    {
+      "id": "project-3",
+      "description": "Automotive Visualization project",
+      "imageUrl": "https://images.unsplash.com/photo-1728401915599-b85e1bd25da8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjb25jZXB0JTIwY2FyfGVufDB8fHx8MTc3MDU4MTY0OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "concept car"
+    },
+    {
+      "id": "project-4",
+      "description": "Abstract Geometry project",
+      "imageUrl": "https://images.unsplash.com/photo-1595411425732-e69c1abe2763?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhYnN0cmFjdCUyMGdlb21ldHJ5fGVufDB8fHx8MTc3MDQ4NDk0OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract geometry"
+    },
+    {
+      "id": "project-5",
+      "description": "Ancient Ruins project",
+      "imageUrl": "https://images.unsplash.com/photo-1573540374799-d527e9ee392b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhbmNpZW50JTIwcnVpbnN8ZW58MHx8fHwxNzcwNTgxNjQzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ancient ruins"
+    },
+    {
+      "id": "project-6",
+      "description": "The Alchemist's Study project",
+      "imageUrl": "https://images.unsplash.com/photo-1558596602-b09a835e8bc6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YWxjaGVtaXN0JTIwc3R1ZHl8ZW58MHx8fHwxNzcwNTgxNjQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "alchemist study"
+    },
+    {
+      "id": "project-7",
+      "description": "Your Smart Kitchen project",
+      "imageUrl": "https://images.unsplash.com/photo-1738045117493-27c33be007ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c21hcnQlMjBraXRjaGVufGVufDB8fHx8MTc3MDU4MTY0OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smart kitchen"
+    }
+  ]
 }
