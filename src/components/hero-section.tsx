@@ -4,16 +4,18 @@ import { Button } from './ui/button';
 const HeroSection = () => {
   return (
     <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover opacity-40 grayscale-[20%]"
-      >
-        <source src="/hero-video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <div className="absolute inset-0 w-full h-full overflow-hidden opacity-40 grayscale-[20%]">
+        <iframe
+          src="https://streamable.com/e/o0z4nn?autoplay=1&nocontrols=1&muted=1&loop=1"
+          allow="autoplay; fullscreen"
+          allowFullScreen
+          className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2"
+          style={{
+            pointerEvents: 'none',
+            border: 0,
+          }}
+        ></iframe>
+      </div>
       <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/50 to-slate-950"></div>
 
       {/* Background Gradient Orbs */}
