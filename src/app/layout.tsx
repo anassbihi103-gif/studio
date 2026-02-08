@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className="font-body antialiased selection:bg-primary selection:text-white">
         {children}
         <Toaster />
+        <Script src="https://player.vimeo.com/api/player.js" />
       </body>
     </html>
   );
