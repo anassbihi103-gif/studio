@@ -1,22 +1,18 @@
-import Image from 'next/image';
 import { Button } from './ui/button';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const HeroSection = () => {
-  const heroImage = PlaceHolderImages.find(p => p.id === 'hero-background');
-
   return (
     <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
-      {heroImage && (
-         <Image
-          src={heroImage.imageUrl}
-          alt={heroImage.description}
-          fill
-          className="object-cover opacity-40 grayscale-[20%]"
-          priority
-          data-ai-hint={heroImage.imageHint}
-        />
-      )}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover opacity-40 grayscale-[20%]"
+      >
+        <source src="/hero-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/50 to-slate-950"></div>
 
       {/* Background Gradient Orbs */}

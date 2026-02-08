@@ -1,12 +1,6 @@
 {
   "placeholderImages": [
     {
-      "id": "hero-background",
-      "description": "Grayscale portrait for hero background",
-      "imageUrl": "https://images.unsplash.com/photo-1573849992442-071d7027bafd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwb3J0cmFpdCUyMGdyYXlzY2FsZXxlbnwwfHx8fDE3NzA1ODE2NDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "portrait grayscale"
-    },
-    {
       "id": "project-1",
       "description": "Cyberpunk Cityscape project",
       "imageUrl": "https://images.unsplash.com/photo-1551771685-c367c9127a03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjeWJlcnB1bmslMjBjaXR5fGVufDB8fHx8MTc3MDUxNDg3MXww&ixlib=rb-4.1.0&q=80&w=1080",
