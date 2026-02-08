@@ -1,5 +1,6 @@
 import { Button } from './ui/button';
 
+
 const HeroSection = () => {
   return (
     <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
@@ -10,7 +11,7 @@ const HeroSection = () => {
         playsInline
         className="absolute inset-0 w-full h-full object-cover opacity-40 grayscale-[20%]"
       >
-        <source src="/hero-video.mp4" type="video/mp4" />
+        <source src="/kling_20251128_Image_to_Video_Animate_th_5147_0.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/50 to-slate-950"></div>
