@@ -7,9 +7,9 @@ const HeroSection = () => {
       <div className="absolute inset-0 w-full h-full overflow-hidden opacity-40 grayscale-[20%]">
         <iframe
           src="https://player.vimeo.com/video/1163080800?background=1"
-          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
           referrerPolicy="strict-origin-when-cross-origin"
-          className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2"
+          className="absolute top-1/2 left-1/2 w-auto min-w-full min-h-full max-w-none -translate-x-1/2 -translate-y-1/2"
           style={{
             pointerEvents: 'none',
             border: 0,
