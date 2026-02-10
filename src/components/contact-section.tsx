@@ -49,14 +49,14 @@ const ContactSection = () => {
   }
 
   return (
-    <section id="contact" className="py-24 bg-slate-950 overflow-hidden relative">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[1px] bg-gradient-to-r from-transparent via-slate-800 to-transparent"></div>
+    <section id="contact" className="py-24 bg-background overflow-hidden relative">
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[1px] bg-gradient-to-r from-transparent via-border to-transparent"></div>
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-black mb-4 font-headline">LET'S COLLABORATE</h2>
-            <p className="text-slate-400">Available for freelance projects, consultations, and full-time creative roles.</p>
+            <p className="text-muted-foreground">Available for freelance projects, consultations, and full-time creative roles.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -71,7 +71,7 @@ const ContactSection = () => {
               </div>
               <div className="flex space-x-4">
                 {[Twitter, Github, Linkedin].map((Icon, idx) => (
-                  <a key={idx} href="#" className="w-10 h-10 bg-slate-900 rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all border border-slate-800">
+                  <a key={idx} href="#" className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all border border-border">
                     <Icon className="w-5 h-5" />
                   </a>
                 ))}
@@ -86,9 +86,9 @@ const ContactSection = () => {
                     name="fullName"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-xs font-bold uppercase text-slate-500">Full Name</FormLabel>
+                        <FormLabel className="text-xs font-bold uppercase text-muted-foreground">Full Name</FormLabel>
                         <FormControl>
-                          <Input placeholder="John Doe" {...field} className="bg-slate-900 border-slate-800 rounded-xl px-4 py-3 h-auto focus:border-primary" />
+                          <Input placeholder="John Doe" {...field} className="bg-secondary border-border rounded-xl px-4 py-3 h-auto focus:border-primary" />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -99,9 +99,9 @@ const ContactSection = () => {
                     name="email"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-xs font-bold uppercase text-slate-500">Email Address</FormLabel>
+                        <FormLabel className="text-xs font-bold uppercase text-muted-foreground">Email Address</FormLabel>
                         <FormControl>
-                          <Input type="email" placeholder="john@company.com" {...field} className="bg-slate-900 border-slate-800 rounded-xl px-4 py-3 h-auto focus:border-primary" />
+                          <Input type="email" placeholder="john@company.com" {...field} className="bg-secondary border-border rounded-xl px-4 py-3 h-auto focus:border-primary" />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -112,15 +112,15 @@ const ContactSection = () => {
                     name="message"
                     render={({ field }) => (
                       <FormItem className="sm:col-span-2">
-                        <FormLabel className="text-xs font-bold uppercase text-slate-500">Message</FormLabel>
+                        <FormLabel className="text-xs font-bold uppercase text-muted-foreground">Message</FormLabel>
                         <FormControl>
-                          <Textarea placeholder="Tell me about your project..." {...field} className="bg-slate-900 border-slate-800 rounded-xl px-4 py-3 h-32 focus:border-primary" />
+                          <Textarea placeholder="Tell me about your project..." {...field} className="bg-secondary border-border rounded-xl px-4 py-3 h-32 focus:border-primary" />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
                   />
-                  <Button type="submit" disabled={isSubmitting} className="sm:col-span-2 bg-white text-slate-950 py-4 h-auto rounded-xl font-black hover:bg-primary hover:text-primary-foreground transition-all flex items-center justify-center space-x-2 text-base">
+                  <Button type="submit" disabled={isSubmitting} className="sm:col-span-2 bg-primary text-primary-foreground py-4 h-auto rounded-xl font-black hover:bg-primary/90 transition-all flex items-center justify-center space-x-2 text-base">
                     <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
                     <Mail className="w-5 h-5" />
                   </Button>

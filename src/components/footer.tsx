@@ -11,7 +11,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="py-12 border-t border-slate-900 bg-slate-950 text-slate-500">
+    <footer className="py-12 border-t border-border bg-background text-muted-foreground">
       <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="flex items-center space-x-2 opacity-50">
           <Image 
@@ -27,8 +27,8 @@ const Footer = () => {
           © {year} Designed & Built for the Next Dimension
         </p>
         <div className="flex space-x-6 text-xs font-bold uppercase tracking-widest">
-          <a href="#" className="hover:text-white transition-colors">Privacy</a>
-          <a href="#" className="hover:text-white transition-colors">Terms</a>
+          <a href="#" className="hover:text-foreground transition-colors">Privacy</a>
+          <a href="#" className="hover:text-foreground transition-colors">Terms</a>
         </div>
       </div>
     </footer>

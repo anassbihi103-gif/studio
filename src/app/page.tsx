@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="bg-slate-950">
+      <main className="bg-background">
         <HeroSection />
         <StatsSection />
         <PortfolioSection />

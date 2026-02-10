@@ -15,7 +15,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
   const image = PlaceHolderImages.find(p => p.id === project.imageId);
 
   return (
-    <div className="group relative overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 transition-all hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10">
+    <div className="group relative overflow-hidden rounded-2xl bg-secondary border border-border transition-all hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10">
       <div className="aspect-[4/3] overflow-hidden">
         {image && (
           <Image
@@ -33,10 +33,10 @@ const ProjectCard = ({ project }: { project: Project }) => {
           {project.category}
         </div>
         <h3 className="text-xl font-bold mb-3 font-headline">{project.title}</h3>
-        <p className="text-slate-400 text-sm leading-relaxed mb-6">
+        <p className="text-muted-foreground text-sm leading-relaxed mb-6">
           {project.description}
         </p>
-        <button className="flex items-center text-sm font-bold text-slate-300 group-hover:text-primary transition-colors">
+        <button className="flex items-center text-sm font-bold text-muted-foreground group-hover:text-primary transition-colors">
           View Details <ExternalLink className="ml-2 w-4 h-4" />
         </button>
       </div>
