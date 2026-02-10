@@ -5,52 +5,45 @@ import ProjectCard from './project-card';
 const projects = [
   {
     id: 1,
-    title: "Cyberpunk Cityscape",
+    title: "Easy tear all in one",
     category: "Environment Design",
     imageId: "project-1",
     description: "A high-poly futuristic urban environment created in Unreal Engine 5."
   },
   {
     id: 2,
-    title: "Bio-Mechanical Construct",
+    title: "Fanuc Robots",
     category: "Character Art",
     imageId: "project-2",
     description: "Organic-robotic fusion sculpt focusing on sub-surface scattering materials."
   },
   {
     id: 3,
-    title: "Automotive Visualization",
+    title: "Metalfer Products",
     category: "Product Render",
     imageId: "project-3",
     description: "Photorealistic rendering of a concept electric vehicle using Octane."
   },
   {
     id: 4,
-    title: "Abstract Geometry",
+    title: "Smart Kitchen",
     category: "Motion Graphics",
     imageId: "project-4",
     description: "Procedural geometry animation loop for a tech branding project."
   },
   {
     id: 5,
-    title: "Ancient Ruins",
+    title: "Stand for Cappa Pullita",
     category: "Game Assets",
     imageId: "project-5",
     description: "Optimized low-poly modular kit for real-time mobile environments."
   },
   {
     id: 6,
-    title: "The Alchemist's Study",
+    title: "Tennis X Gruppo Activa",
     category: "Interior Design",
     imageId: "project-6",
     description: "Complex interior lighting setup utilizing global illumination and Ray Tracing."
-  },
-  {
-    id: 7,
-    title: "Your Smart Kitchen",
-    category: "ArchViz VR",
-    imageId: "project-7",
-    description: "Interactive VR experience demonstrating IoT integration in modern culinary spaces."
   }
 ];
 
