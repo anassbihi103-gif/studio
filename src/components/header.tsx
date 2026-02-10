@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { Menu, X } from 'lucide-react';
 import { Button } from './ui/button';
 
@@ -22,9 +23,13 @@ const Header = () => {
     <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-slate-950/80 backdrop-blur-md py-3 shadow-xl' : 'bg-transparent py-6'}`}>
       <div className="container mx-auto px-6 flex justify-between items-center">
         <a href="#home" className="flex items-center space-x-2">
-          <div className="w-10 h-10 bg-gradient-to-br from-primary to-blue-600 rounded-lg flex items-center justify-center font-bold text-xl text-primary-foreground shadow-lg shadow-primary/20">
-            V
-          </div>
+          <Image 
+            src="/logo.png" 
+            alt="Volt3D Logo" 
+            width={40} 
+            height={40} 
+            className="rounded-lg shadow-lg shadow-primary/20" 
+          />
           <span className="text-xl font-bold tracking-tighter font-headline">VOLT3D</span>
         </a>
 

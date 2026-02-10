@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const Footer = () => {
   const [year, setYear] = useState<number | string>('...');
@@ -13,9 +14,13 @@ const Footer = () => {
     <footer className="py-12 border-t border-slate-900 bg-slate-950 text-slate-500">
       <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="flex items-center space-x-2 opacity-50">
-          <div className="w-6 h-6 bg-slate-500 rounded-sm flex items-center justify-center font-bold text-xs text-slate-950">
-            V
-          </div>
+          <Image 
+            src="/logo.png" 
+            alt="Volt3D Logo" 
+            width={24} 
+            height={24} 
+            className="rounded-sm" 
+          />
           <span className="text-sm font-bold tracking-tighter uppercase font-headline">VOLT3D Portfolio</span>
         </div>
         <p className="text-xs font-medium uppercase tracking-[0.2em] text-center">
