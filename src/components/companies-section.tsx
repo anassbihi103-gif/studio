@@ -2,12 +2,12 @@ import React from 'react';
 import { Building2, Feather, Globe, Shield, Activity, Award } from 'lucide-react';
 
 const companies = [
-  { name: 'Urban Construct', icon: <Building2 className="w-16 h-16" /> },
-  { name: 'Lightfeather', icon: <Feather className="w-16 h-16" /> },
-  { name: 'GlobalNet', icon: <Globe className="w-16 h-16" /> },
-  { name: 'Aegis Security', icon: <Shield className="w-16 h-16" /> },
-  { name: 'Momentum', icon: <Activity className="w-16 h-16" /> },
-  { name: 'Summit', icon: <Award className="w-16 h-16" /> },
+  { name: 'Urban Construct', icon: <Building2 className="w-20 h-20" /> },
+  { name: 'Lightfeather', icon: <Feather className="w-20 h-20" /> },
+  { name: 'GlobalNet', icon: <Globe className="w-20 h-20" /> },
+  { name: 'Aegis Security', icon: <Shield className="w-20 h-20" /> },
+  { name: 'Momentum', icon: <Activity className="w-20 h-20" /> },
+  { name: 'Summit', icon: <Award className="w-20 h-20" /> },
 ];
 
 const CompaniesSection = () => {
