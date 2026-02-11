@@ -39,15 +39,21 @@ const AboutSection = () => {
                 <div className="space-y-6 border-l-2 border-primary/20 pl-6">
                   <div className="relative">
                      <div className="absolute -left-[30px] top-1.5 h-3 w-3 rounded-full bg-primary"></div>
-                    <h4 className="font-bold text-foreground">Your Job Title</h4>
-                    <p className="text-sm text-muted-foreground">Company Name | 2020 - Present</p>
-                    <p className="mt-2 text-sm">Describe your responsibilities and achievements in this role.</p>
+                    <h4 className="font-bold text-foreground">3D ARTIST</h4>
+                    <p className="text-sm text-muted-foreground">Antemotion | Rovereto</p>
+                    <p className="mt-2 text-sm">Creation of high-fidelity, optimized 3D assets for peak performance in real-time applications. Leveraged expert technical skills in retopology, PBR texturing, and modeling to consistently deliver photorealistic results that met stringent visual and technical specifications. Enhanced project efficiency and asset quality by integrating industry-standard tools (Blender, Substance Painter) into the streamlined production pipeline.</p>
                   </div>
                   <div className="relative">
                     <div className="absolute -left-[30px] top-1.5 h-3 w-3 rounded-full bg-primary"></div>
-                    <h4 className="font-bold text-foreground">Previous Job Title</h4>
-                    <p className="text-sm text-muted-foreground">Previous Company | 2018 - 2020</p>
-                    <p className="mt-2 text-sm">Describe your responsibilities and achievements in this role.</p>
+                    <h4 className="font-bold text-foreground">CREATIVE DESIGNER</h4>
+                    <p className="text-sm text-muted-foreground">Metalfer | Tione</p>
+                    <p className="mt-2 text-sm">Directed the end-to-end 3D CAD design pipeline (SolidWorks), translating complex engineering specifications into production-ready digital assets. Generated high-impact photorealistic renders (Blender) by expertly refining lighting and composition, significantly enhancing product visibility and appeal. Integrated engineering precision with artistic excellence, ensuring design deliverables were both technically accurate and commercially compelling.</p>
+                  </div>
+                   <div className="relative">
+                    <div className="absolute -left-[30px] top-1.5 h-3 w-3 rounded-full bg-primary"></div>
+                    <h4 className="font-bold text-foreground">MODELLAZIONE 3D</h4>
+                    <p className="text-sm text-muted-foreground">Double S | Brentonico</p>
+                    <p className="mt-2 text-sm">Executed detailed 3D CAD modeling projects (SolidWorks) that directly supported the efficient execution of the core production schedule. Streamlined design workflows by applying deep knowledge of the production process, resulting in measurable gains in overall project efficiency. Applied advanced problem-solving methodologies to rapidly adapt to new technical requirements and ensure on-time delivery across diverse project scopes.</p>
                   </div>
                 </div>
               </div>
