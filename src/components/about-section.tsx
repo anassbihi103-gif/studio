@@ -66,7 +66,7 @@ const AboutSection = () => {
                   <div className="relative">
                     <div className="absolute -left-[30px] top-1.5 h-3 w-3 rounded-full bg-primary"></div>
                     <h4 className="font-bold text-foreground">Alta Formazione Digital Manufacturing Design</h4>
-                    <p className="text-sm text-muted-foreground">School Poloveronesi Forom | 2022 - 2026</p>
+                    <p className="text-sm text-muted-foreground"> Poloveronesi  | 2022 - 2026</p>
                   </div>
                 </div>
               </div>
