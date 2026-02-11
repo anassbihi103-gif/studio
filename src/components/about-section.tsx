@@ -24,9 +24,9 @@ const AboutSection = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
           </div>
           <div>
-            <h2 className="text-4xl font-black mb-6 font-headline">A PASSION FOR PIXELS</h2>
+            <h2 className="text-4xl font-black mb-6 font-headline">Executive Summary</h2>
             <p className="text-muted-foreground text-lg mb-12 leading-relaxed">
-              Hello! I'm ANAS SBIHI, a digital artist with a deep-seated passion for creating immersive worlds. My expertise lies in translating conceptual ideas into tangible, high-fidelity 3D assets, and I thrive on the blend of technical challenges and artistic expression.
+            Highly accomplished 3D Visualization Specialist with a proven ability to bridge advanced technical modeling (CAD) and high-fidelity artistic production. Core expertise centers on developing optimized 3D assets and animations for real-time applications, consistently meeting stringent performance and visual requirements. Strategic collaborator skilled in translating complex engineering data and specifications into compelling, commercially viable digital solutions, demonstrating meticulous attention to detail and project efficiency.
             </p>
             
             <div className="space-y-12">
