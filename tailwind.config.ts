@@ -91,11 +91,16 @@ export default {
         gradient: {
           to: { 'background-position': '200% center' },
         },
+        glow: {
+          '0%, 100%': { filter: 'drop-shadow(0 0 4px hsl(var(--primary)/0.6))' },
+          '50%': { filter: 'drop-shadow(0 0 12px hsl(var(--primary)/0.6))' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         gradient: 'gradient 3s linear infinite',
+        glow: 'glow 3s ease-in-out infinite',
       },
     },
   },
