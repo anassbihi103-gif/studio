@@ -25,7 +25,7 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-6 relative z-10 text-center">
         <p className="text-primary font-code tracking-[0.3em] mb-4 uppercase text-sm animate-fade-in">
-          Digital Environment & Asset Artist
+          Higher Technician in Digital Manufacturing Design & 3D artist
         </p>
         <h1 className="text-6xl md:text-8xl font-black mb-6 tracking-tight leading-none bg-clip-text text-transparent bg-gradient-to-b from-foreground to-muted-foreground font-headline">
           BRINGING <br /> IMAGINATION <br /> TO LIFE
