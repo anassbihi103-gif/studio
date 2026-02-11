@@ -15,9 +15,9 @@ export default function Home() {
       <main className="bg-background">
         <HeroSection />
         <AboutSection />
-        <StatsSection />
         <CompaniesSection />
         <PortfolioSection />
+        <StatsSection />
         <SkillsSection />
         <ContactSection />
       </main>

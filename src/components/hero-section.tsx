@@ -9,11 +9,7 @@ const HeroSection = () => {
           src="https://player.vimeo.com/video/1163080800?background=1&loop=1&autopause=0"
           allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
           referrerPolicy="strict-origin-when-cross-origin"
-          className="absolute top-1/2 left-1/2 w-auto min-w-full min-h-full max-w-none -translate-x-1/2 -translate-y-1/2"
-          style={{
-            pointerEvents: 'none',
-            border: 0,
-          }}
+          className="pointer-events-none absolute left-1/2 top-1/2 h-[56.25vw] min-h-screen w-screen min-w-[177.78vh] -translate-x-1/2 -translate-y-1/2 border-0"
           title="GrabberVideo"
         ></iframe>
       </div>
