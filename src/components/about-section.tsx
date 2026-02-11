@@ -3,6 +3,8 @@ import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from './ui/button';
 import { ArrowRight } from 'lucide-react';
+import mypic from '../../public/anas.png';
+
 
 const AboutSection = () => {
   const image = PlaceHolderImages.find(p => p.id === 'about-me');
@@ -14,8 +16,8 @@ const AboutSection = () => {
           <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-primary/10 aspect-[4/5]">
             {image && (
               <Image
-                src={image.imageUrl}
-                alt="A portrait of Volt3D"
+                src={mypic}
+                alt="A portrait of ANAS SBIHI"
                 fill
                 className="object-cover"
                 data-ai-hint={image.imageHint}
@@ -26,7 +28,7 @@ const AboutSection = () => {
           <div>
             <h2 className="text-4xl font-black mb-6 font-headline">A PASSION FOR PIXELS</h2>
             <p className="text-muted-foreground text-lg mb-4 leading-relaxed">
-              Hello! I'm Volt3D, a digital artist with a deep-seated passion for creating immersive worlds and compelling characters. With over 8 years in the industry, my journey has taken me through the pipelines of blockbuster films and award-winning video games.
+              Hello! I'm ANAS SBIHI, a digital artist with a deep-seated passion for creating immersive worlds and compelling characters. With over 8 years in the industry, my journey has taken me through the pipelines of blockbuster films and award-winning video games.
             </p>
             <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
               My expertise lies in translating conceptual ideas into tangible, high-fidelity 3D assets. I thrive on technical challenges and artistic expression, constantly pushing the boundaries of what's possible in digital art.

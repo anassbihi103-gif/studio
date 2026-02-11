@@ -4,7 +4,7 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Volt3D Showcase',
+  title: 'ANAS SBIHI Showcase',
   description: 'Digital Environment & Asset Artist Portfolio',
 };
 

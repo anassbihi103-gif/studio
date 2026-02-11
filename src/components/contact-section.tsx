@@ -67,7 +67,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <h4 className="text-primary text-xs font-bold uppercase tracking-widest mb-4">Direct Contact</h4>
-                <p className="text-lg">hello@volt3d.com<br />+1 (555) 123-4567</p>
+                <p className="text-lg">hello@anassbihi.com<br />+1 (555) 123-4567</p>
               </div>
               <div className="flex space-x-4">
                 {[Twitter, Github, Linkedin].map((Icon, idx) => (

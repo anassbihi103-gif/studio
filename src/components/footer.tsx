@@ -16,12 +16,12 @@ const Footer = () => {
         <div className="flex items-center space-x-2 opacity-50">
           <Image 
             src="/logo.png" 
-            alt="Volt3D Logo" 
+            alt="ANAS SBIHI Logo" 
             width={24} 
             height={24} 
             className="rounded-sm" 
           />
-          <span className="text-sm font-bold tracking-tighter uppercase font-headline">VOLT3D Portfolio</span>
+          <span className="text-sm font-bold tracking-tighter uppercase font-headline">ANAS SBIHI Portfolio</span>
         </div>
         <p className="text-xs font-medium uppercase tracking-[0.2em] text-center">
           © {year} Designed & Built for the Next Dimension

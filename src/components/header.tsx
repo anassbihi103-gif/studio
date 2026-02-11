@@ -25,12 +25,12 @@ const Header = () => {
         <a href="#home" className="flex items-center space-x-2">
           <Image 
             src="/logo.png" 
-            alt="Volt3D Logo" 
+            alt="ANAS SBIHI Logo" 
             width={40} 
             height={40} 
             className="rounded-lg shadow-lg shadow-primary/20" 
           />
-          <span className="text-xl font-bold tracking-tighter font-headline">VOLT3D</span>
+          <span className="text-xl font-bold tracking-tighter font-headline">ANAS SBIHI</span>
         </a>
 
         {/* Desktop Nav */}
