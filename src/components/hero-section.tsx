@@ -27,8 +27,8 @@ const HeroSection = () => {
         <p className="text-primary font-code tracking-[0.3em] mb-4 uppercase text-sm animate-fade-in">
           Higher Technician in Digital Manufacturing Design & 3D artist
         </p>
-        <h1 className="text-6xl md:text-8xl font-black mb-6 tracking-tight leading-none bg-clip-text text-transparent bg-gradient-to-b from-foreground to-muted-foreground font-headline">
-          BRINGING <br /> IMAGINATION <br /> TO LIFE
+        <h1 className="text-6xl md:text-7xl font-black mb-6 tracking-tight leading-tight bg-clip-text text-transparent bg-gradient-to-r from-primary via-foreground to-primary bg-[length:200%_auto] animate-gradient font-headline drop-shadow-[0_0_8px_hsl(var(--primary)/0.4)]">
+          bringing your vision to life with precision and flair
         </h1>
         <p className="max-w-xl mx-auto text-muted-foreground text-lg mb-10">
           Specializing in high-fidelity 3D environments, character sculpting, and procedural modeling for films and games.
