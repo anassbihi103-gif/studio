@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from './ui/button';
 import { ArrowRight, Briefcase, GraduationCap } from 'lucide-react';
-import mypic from '../../public/anas.png';
 
 const AboutSection = () => {
   const image = PlaceHolderImages.find(p => p.id === 'about-me');
@@ -15,7 +14,7 @@ const AboutSection = () => {
           <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-primary/10 aspect-[4/5] lg:sticky lg:top-24">
             {image && (
               <Image
-                src={mypic}
+                src="/anas.png"
                 alt="A portrait of ANAS SBIHI"
                 fill
                 className="object-cover"
@@ -66,8 +65,8 @@ const AboutSection = () => {
                 <div className="space-y-6 border-l-2 border-primary/20 pl-6">
                   <div className="relative">
                     <div className="absolute -left-[30px] top-1.5 h-3 w-3 rounded-full bg-primary"></div>
-                    <h4 className="font-bold text-foreground">Your Degree or Certificate</h4>
-                    <p className="text-sm text-muted-foreground">University/Institution Name | 2014 - 2018</p>
+                    <h4 className="font-bold text-foreground">Alta Formazione Digital Manufacturing Design</h4>
+                    <p className="text-sm text-muted-foreground">School Poloveronesi Forom | 2022 - 2026</p>
                   </div>
                 </div>
               </div>
