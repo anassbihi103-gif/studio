@@ -31,7 +31,7 @@ const HeroSection = () => {
           bringing your vision to life with precision and flair
         </h1>
         <p className="max-w-xl mx-auto text-muted-foreground text-lg mb-10">
-          Specializing in high-fidelity 3D environments, character sculpting, and procedural modeling for films and games.
+          Specializing in advanced CAD modeling and real-time high-fidelity 3D visualization.
         </p>
         <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
           <Button asChild size="lg" className="px-8 py-7 text-base font-bold bg-primary text-primary-foreground hover:bg-primary/90 transition-all shadow-lg shadow-primary/5 rounded-xl">
