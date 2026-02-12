@@ -5,9 +5,9 @@ const companies = [
   { name: 'Antemotion', logo: '/antemotion.png' },
   { name: 'Metalfer', logo: '/metalfer.png' },
   { name: 'Double S', logo: '/doubles.png' },
-  { name: 'TechCorp', logo: '/techcorp.png' },
-  { name: 'Innovate Inc', logo: '/innovate.png' },
-  { name: 'QuantumLeap', logo: '/quantumleap.png' },
+  { name: 'gruppoactiva', logo: '/gruppoactiva.png' },
+  { name: 'Easytear', logo: '/Easytear.png' },
+  { name: 'otticapassuello', logo: '/otticapassuello.png' },
 ];
 
 const CompaniesSection = () => {
@@ -19,17 +19,20 @@ const CompaniesSection = () => {
         </div>
         <div className="relative w-full overflow-hidden">
             <div className="flex w-max animate-marquee group-hover:pause">
-                {[...companies, ...companies].map((company, index) => (
+                {[...companies, ...companies].map((company, index) => {
+                  const isSmaller = ['Easytear', 'Double S', 'gruppoactiva'].includes(company.name);
+                  return (
                     <div key={index} className="flex-shrink-0 w-64 h-20 flex justify-center items-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" title={company.name}>
                         <Image 
                             src={company.logo} 
                             alt={`${company.name} logo`}
-                            width={140}
-                            height={50}
+                            width={isSmaller ? 120 : 140}
+                            height={isSmaller ? 40 : 50}
                             className="object-contain"
                         />
                     </div>
-                ))}
+                  );
+                })}
             </div>
         </div>
       </div>
