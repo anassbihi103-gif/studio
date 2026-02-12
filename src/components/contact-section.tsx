@@ -63,11 +63,11 @@ const ContactSection = () => {
             <div className="space-y-8">
               <div>
                 <h4 className="text-primary text-xs font-bold uppercase tracking-widest mb-4">Location</h4>
-                <p className="text-lg">San Francisco, CA<br />Remote Friendly</p>
+                <p className="text-lg">corso verona 74<br />Rovereto</p>
               </div>
               <div>
                 <h4 className="text-primary text-xs font-bold uppercase tracking-widest mb-4">Direct Contact</h4>
-                <p className="text-lg">hello@anassbihi.com<br />+1 (555) 123-4567</p>
+                <p className="text-lg">anassbihi103@gmail.com<br />+39 3472897012</p>
               </div>
               <div className="flex space-x-4">
                 {[Twitter, Github, Linkedin].map((Icon, idx) => (
