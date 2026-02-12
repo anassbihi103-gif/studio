@@ -20,7 +20,7 @@ const CompaniesSection = () => {
         <div className="relative w-full overflow-hidden">
             <div className="flex w-max animate-marquee group-hover:pause">
                 {[...companies, ...companies].map((company, index) => {
-                  const isSmaller = ['Easytear', 'Double S', 'gruppo activa'].includes(company.name);
+                  const isSmaller = ['Easytear', 'Double S'].includes(company.name);
                   const isGlowy = company.name === 'ottica passuello';
                   return (
                     <div 
