@@ -22,15 +22,15 @@ const Header = () => {
   return (
     <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-background/80 backdrop-blur-md py-3 shadow-xl' : 'bg-transparent py-6'}`}>
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <a href="#home" className="flex items-center space-x-2">
+        <a href="#home" className="flex items-center space-x-3">
           <Image 
             src="/PRIMO.png" 
             alt="ANAS SBIHI Logo" 
-            width={40} 
-            height={40} 
+            width={50} 
+            height={50} 
             className="rounded-lg shadow-lg shadow-primary/20 brightness-0 invert" 
           />
-          <span className="text-xl font-bold tracking-tighter font-headline">ANAS SBIHI</span>
+          <span className="text-2xl font-bold tracking-tighter font-headline">ANAS SBIHI</span>
         </a>
 
         {/* Desktop Nav */}
