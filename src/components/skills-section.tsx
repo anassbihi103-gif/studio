@@ -45,12 +45,12 @@ const SkillsSection = () => {
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
             {softwareSkills.map((skill, idx) => (
               <div key={idx} className="p-6 rounded-2xl bg-background border border-border flex flex-col items-center justify-center text-center space-y-4 hover:border-primary/50 transition-colors group">
-                <div className="p-4 bg-secondary rounded-xl flex items-center justify-center h-24 w-24">
+                <div className="p-4 bg-secondary rounded-xl flex items-center justify-center h-20 w-20">
                   <Image
                     src={skill.logo}
                     alt={`${skill.name} logo`}
-                    width={64}
-                    height={64}
+                    width={48}
+                    height={48}
                     className="object-contain"
                   />
                 </div>
