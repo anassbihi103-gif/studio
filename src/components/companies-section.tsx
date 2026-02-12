@@ -8,6 +8,7 @@ const companies = [
   { name: 'gruppo activa', logo: '/gruppo activa.png' },
   { name: 'Easytear', logo: '/Easytear.png' },
   { name: 'ottica passuello', logo: '/ottica passuello.png' },
+  { name: 'cappa pulita', logo: '/cappa pulita.png' },
 ];
 
 const CompaniesSection = () => {
@@ -20,7 +21,7 @@ const CompaniesSection = () => {
         <div className="relative w-full overflow-hidden">
             <div className="flex w-max animate-marquee group-hover:pause">
                 {[...companies, ...companies].map((company, index) => {
-                  const isSmaller = ['Easytear', 'Double S'].includes(company.name);
+                  const isSmaller = ['Easytear', 'Double S', 'cappa pulita'].includes(company.name);
                   const isGlowy = company.name === 'ottica passuello';
                   return (
                     <div 
