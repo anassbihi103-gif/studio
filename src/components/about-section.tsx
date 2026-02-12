@@ -14,10 +14,11 @@ const AboutSection = () => {
           <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-primary/10 aspect-[4/5] lg:sticky lg:top-24">
             {image && (
               <Image
-                src="/anas.png"
+                src={image.imageUrl}
                 alt="A portrait of ANAS SBIHI"
-                fill
-                className="object-cover"
+                width={800}
+                height={1000}
+                className="w-full h-full object-cover"
                 data-ai-hint={image.imageHint}
               />
             )}
@@ -66,7 +67,7 @@ const AboutSection = () => {
                   <div className="relative">
                     <div className="absolute -left-[30px] top-1.5 h-3 w-3 rounded-full bg-primary"></div>
                     <h4 className="font-bold text-foreground">Alta Formazione Digital Manufacturing Design</h4>
-                    <p className="text-sm text-muted-foreground"> Poloveronesi  | 2022 - 2026</p>
+                    <p className="text-sm text-muted-foreground">Poloveronesi | 2022 - 2026</p>
                   </div>
                 </div>
               </div>
