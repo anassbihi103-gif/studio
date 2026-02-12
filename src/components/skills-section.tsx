@@ -10,12 +10,12 @@ const coreSkills = [
 ];
 
 const softwareSkills = [
-  { name: "Blender", logo: "/blender-logo.png" },
-  { name: "SolidWorks", logo: "/solidworks-logo.png" },
-  { name: "Grasshopper", logo: "/grasshopper-logo.png" },
-  { name: "Rhino", logo: "/rhino-logo.png" },
-  { name: "Substance Painter", logo: "/substance-logo.png" },
-  { name: "Adobe Premiere Pro", logo: "/premiere-logo.png" }
+  { name: "Blender", logo: "/softwares/blender-logo.png" },
+  { name: "SolidWorks", logo: "/softwares/solidworks-logo.png" },
+  { name: "Grasshopper", logo: "/softwares/grasshopper-logo.png" },
+  { name: "Rhino", logo: "/softwares/rhino-logo.png" },
+  { name: "Substance Painter", logo: "/softwares/substance-logo.png" },
+  { name: "Adobe Premiere Pro", logo: "/softwares/premiere-logo.png" }
 ];
 
 const SkillsSection = () => {
