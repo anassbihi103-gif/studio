@@ -1,13 +1,13 @@
 import React from 'react';
-import { Building2, Feather, Globe, Shield, Activity, Award } from 'lucide-react';
+import Image from 'next/image';
 
 const companies = [
-  { name: 'Urban Construct', icon: <Building2 className="w-20 h-20" /> },
-  { name: 'Lightfeather', icon: <Feather className="w-20 h-20" /> },
-  { name: 'GlobalNet', icon: <Globe className="w-20 h-20" /> },
-  { name: 'Aegis Security', icon: <Shield className="w-20 h-20" /> },
-  { name: 'Momentum', icon: <Activity className="w-20 h-20" /> },
-  { name: 'Summit', icon: <Award className="w-20 h-20" /> },
+  { name: 'Antemotion', logo: '/antemotion.png' },
+  { name: 'Metalfer', logo: '/metalfer.png' },
+  { name: 'Double S', logo: '/doubles.png' },
+  { name: 'TechCorp', logo: '/techcorp.png' },
+  { name: 'Innovate Inc', logo: '/innovate.png' },
+  { name: 'QuantumLeap', logo: '/quantumleap.png' },
 ];
 
 const CompaniesSection = () => {
@@ -20,8 +20,14 @@ const CompaniesSection = () => {
         <div className="relative w-full overflow-hidden">
             <div className="flex w-max animate-marquee group-hover:pause">
                 {[...companies, ...companies].map((company, index) => (
-                    <div key={index} className="flex-shrink-0 w-64 flex justify-center items-center text-muted-foreground/50 hover:text-foreground transition-all duration-300 hover:drop-shadow-[0_0_5px_hsl(var(--primary)/0.6)]" title={company.name}>
-                        {company.icon}
+                    <div key={index} className="flex-shrink-0 w-64 h-20 flex justify-center items-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" title={company.name}>
+                        <Image 
+                            src={company.logo} 
+                            alt={`${company.name} logo`}
+                            width={140}
+                            height={50}
+                            className="object-contain"
+                        />
                     </div>
                 ))}
             </div>
