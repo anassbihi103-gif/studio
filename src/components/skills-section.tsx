@@ -10,12 +10,12 @@ const coreSkills = [
 ];
 
 const softwareSkills = [
-  { name: "Blender", logo: "/softwares/blender-logo.png" },
-  { name: "SolidWorks", logo: "/softwares/solidworks-logo.png" },
-  { name: "Grasshopper", logo: "/softwares/grasshopper-logo.png" },
-  { name: "Rhino", logo: "/softwares/rhino-logo.png" },
-  { name: "Substance Painter", logo: "/softwares/substance-logo.png" },
-  { name: "Adobe Premiere Pro", logo: "/softwares/premiere-logo.png" }
+  { name: "Blender", logo: "/softwares/blender.png" },
+  { name: "SolidWorks", logo: "/softwares/SolidWorks.png" },
+  { name: "Grasshopper", logo: "/softwares/grasshopper.png" },
+  { name: "Rhino", logo: "/softwares/Rhino.png" },
+  { name: "Substance Painter", logo: "/softwares/substance painter.png" },
+  { name: "Adobe Premiere Pro", logo: "/softwares/adope premiere.png" }
 ];
 
 const SkillsSection = () => {
@@ -45,12 +45,12 @@ const SkillsSection = () => {
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
             {softwareSkills.map((skill, idx) => (
               <div key={idx} className="p-6 rounded-2xl bg-background border border-border flex flex-col items-center justify-center text-center space-y-4 hover:border-primary/50 transition-colors group">
-                <div className="p-4 bg-secondary rounded-xl flex items-center justify-center h-20 w-20">
+                <div className="p-4 bg-secondary rounded-xl flex items-center justify-center h-24 w-24">
                   <Image
                     src={skill.logo}
                     alt={`${skill.name} logo`}
-                    width={50}
-                    height={50}
+                    width={64}
+                    height={64}
                     className="object-contain"
                   />
                 </div>
