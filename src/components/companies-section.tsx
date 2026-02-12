@@ -5,9 +5,9 @@ const companies = [
   { name: 'Antemotion', logo: '/antemotion.png' },
   { name: 'Metalfer', logo: '/metalfer.png' },
   { name: 'Double S', logo: '/doubles.png' },
-  { name: 'gruppoactiva', logo: '/gruppoactiva.png' },
+  { name: 'gruppo activa', logo: '/gruppo activa.png' },
   { name: 'Easytear', logo: '/Easytear.png' },
-  { name: 'otticapassuello', logo: '/otticapassuello.png' },
+  { name: 'ottica passuello', logo: '/ottica passuello.png' },
 ];
 
 const CompaniesSection = () => {
@@ -20,14 +20,19 @@ const CompaniesSection = () => {
         <div className="relative w-full overflow-hidden">
             <div className="flex w-max animate-marquee group-hover:pause">
                 {[...companies, ...companies].map((company, index) => {
-                  const isSmaller = ['Easytear', 'Double S', 'gruppoactiva'].includes(company.name);
+                  const isSmaller = ['Easytear', 'Double S', 'gruppo activa'].includes(company.name);
+                  const isGlowy = company.name === 'ottica passuello';
                   return (
-                    <div key={index} className="flex-shrink-0 w-64 h-20 flex justify-center items-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" title={company.name}>
+                    <div 
+                        key={index} 
+                        className={`flex-shrink-0 w-64 h-20 flex justify-center items-center transition-all duration-300 ${isGlowy ? 'animate-glow' : 'grayscale opacity-60 hover:grayscale-0 hover:opacity-100'}`} 
+                        title={company.name}
+                    >
                         <Image 
                             src={company.logo} 
                             alt={`${company.name} logo`}
-                            width={isSmaller ? 120 : 140}
-                            height={isSmaller ? 40 : 50}
+                            width={isSmaller ? 80 : 140}
+                            height={isSmaller ? 15 : 50}
                             className="object-contain"
                         />
                     </div>
