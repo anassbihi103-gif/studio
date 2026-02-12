@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Cpu, Palette, Layers, Dna, Monitor } from 'lucide-react';
+import { Box, DraftingCompass, Film, Layers, Shapes, Workflow } from 'lucide-react';
 import { Progress } from './ui/progress';
 
 const coreSkills = [
@@ -11,11 +11,11 @@ const coreSkills = [
 
 const softwareSkills = [
   { name: "Blender", icon: <Box className="w-6 h-6" /> },
-  { name: "Unreal Engine", icon: <Cpu className="w-6 h-6" /> },
-  { name: "ZBrush", icon: <Palette className="w-6 h-6" /> },
+  { name: "SolidWorks", icon: <DraftingCompass className="w-6 h-6" /> },
+  { name: "Grasshopper", icon: <Workflow className="w-6 h-6" /> },
+  { name: "Rhino", icon: <Shapes className="w-6 h-6" /> },
   { name: "Substance Painter", icon: <Layers className="w-6 h-6" /> },
-  { name: "Maya", icon: <Dna className="w-6 h-6" /> },
-  { name: "Cinema 4D", icon: <Monitor className="w-6 h-6" /> }
+  { name: "Adobe Premiere Pro", icon: <Film className="w-6 h-6" /> }
 ];
 
 const SkillsSection = () => {
