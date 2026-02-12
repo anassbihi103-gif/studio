@@ -3,10 +3,10 @@ import { Box, DraftingCompass, Film, Layers, Shapes, Workflow } from 'lucide-rea
 import { Progress } from './ui/progress';
 
 const coreSkills = [
-  { name: 'High-Poly Sculpting', level: 95 },
-  { name: 'PBR Material Design', level: 90 },
-  { name: 'Real-time Lighting', level: 85 },
-  { name: 'Technical Art', level: 80 }
+  { name: '3d modelling (CAD /polygonal)', level: 95 },
+  { name: 'TEXTURING', level: 90 },
+  { name: '3D ANIMATION', level: 85 },
+  { name: 'RENDERING', level: 80 }
 ];
 
 const softwareSkills = [
