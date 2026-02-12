@@ -25,7 +25,7 @@ const CompaniesSection = () => {
                   return (
                     <div 
                         key={index} 
-                        className={`flex-shrink-0 w-64 h-20 flex justify-center items-center transition-all duration-300 ${isGlowy ? 'animate-glow' : 'grayscale opacity-60 hover:grayscale-0 hover:opacity-100'}`} 
+                        className={`flex-shrink-0 w-64 h-20 flex justify-center items-center transition-all duration-300 ${isGlowy ? 'drop-shadow-[0_0_8px_hsl(var(--primary)/0.6)]' : 'grayscale opacity-60 hover:grayscale-0 hover:opacity-100'}`} 
                         title={company.name}
                     >
                         <Image 
