@@ -24,11 +24,11 @@ const Header = () => {
       <div className="container mx-auto px-6 flex justify-between items-center">
         <a href="#home" className="flex items-center space-x-2">
           <Image 
-            src="/logo.png" 
+            src="/PRIMO.png" 
             alt="ANAS SBIHI Logo" 
             width={40} 
             height={40} 
-            className="rounded-lg shadow-lg shadow-primary/20" 
+            className="rounded-lg shadow-lg shadow-primary/20 brightness-0 invert" 
           />
           <span className="text-xl font-bold tracking-tighter font-headline">ANAS SBIHI</span>
         </a>
