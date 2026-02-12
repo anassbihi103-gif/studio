@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, DraftingCompass, Film, Layers, Shapes, Workflow } from 'lucide-react';
+import Image from 'next/image';
 import { Progress } from './ui/progress';
 
 const coreSkills = [
@@ -10,12 +10,12 @@ const coreSkills = [
 ];
 
 const softwareSkills = [
-  { name: "Blender", icon: <Box className="w-6 h-6" /> },
-  { name: "SolidWorks", icon: <DraftingCompass className="w-6 h-6" /> },
-  { name: "Grasshopper", icon: <Workflow className="w-6 h-6" /> },
-  { name: "Rhino", icon: <Shapes className="w-6 h-6" /> },
-  { name: "Substance Painter", icon: <Layers className="w-6 h-6" /> },
-  { name: "Adobe Premiere Pro", icon: <Film className="w-6 h-6" /> }
+  { name: "Blender", logo: "/blender-logo.png" },
+  { name: "SolidWorks", logo: "/solidworks-logo.png" },
+  { name: "Grasshopper", logo: "/grasshopper-logo.png" },
+  { name: "Rhino", logo: "/rhino-logo.png" },
+  { name: "Substance Painter", logo: "/substance-logo.png" },
+  { name: "Adobe Premiere Pro", logo: "/premiere-logo.png" }
 ];
 
 const SkillsSection = () => {
@@ -45,8 +45,14 @@ const SkillsSection = () => {
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
             {softwareSkills.map((skill, idx) => (
               <div key={idx} className="p-6 rounded-2xl bg-background border border-border flex flex-col items-center justify-center text-center space-y-4 hover:border-primary/50 transition-colors group">
-                <div className="p-4 bg-secondary rounded-xl text-muted-foreground group-hover:text-primary transition-all">
-                  {skill.icon}
+                <div className="p-4 bg-secondary rounded-xl flex items-center justify-center h-20 w-20">
+                  <Image
+                    src={skill.logo}
+                    alt={`${skill.name} logo`}
+                    width={50}
+                    height={50}
+                    className="object-contain"
+                  />
                 </div>
                 <span className="text-sm font-bold uppercase tracking-tight">{skill.name}</span>
               </div>
