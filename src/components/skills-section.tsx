@@ -13,9 +13,9 @@ const softwareSkills = [
   { name: "Blender", logo: "/softwares/blender.png" },
   { name: "SolidWorks", logo: "/softwares/SolidWorks.png" },
   { name: "Grasshopper", logo: "/softwares/grasshopper.png" },
-  { name: "Rhino", logo: "/softwares/Rhino.png" },
+  { name: "Rhino", logo: "/softwares/rhino.png" },
   { name: "Substance Painter", logo: "/softwares/substance.png" },
-  { name: "Adobe Premiere Pro", logo: "/softwares/Premiere.png" }
+  { name: "Adobe Premiere Pro", logo: "/softwares/premiere.png" }
 ];
 
 const SkillsSection = () => {

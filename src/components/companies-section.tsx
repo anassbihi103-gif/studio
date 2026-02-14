@@ -14,7 +14,6 @@ const companies = [
 const CompaniesSection = () => {
   return (
     <section id="companies" className="bg-secondary/50 border-b border-border py-16 group">
-      <div className="container mx-auto px-6">
         <div className="text-center mb-12">
             <h3 className="text-sm font-bold uppercase tracking-[0.3em] text-muted-foreground">Companies</h3>
         </div>
@@ -41,7 +40,6 @@ const CompaniesSection = () => {
                 })}
             </div>
         </div>
-      </div>
     </section>
   );
 };
