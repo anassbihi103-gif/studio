@@ -1,33 +1,25 @@
 import React from 'react';
 import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from './ui/button';
 import { ArrowRight, Briefcase, GraduationCap } from 'lucide-react';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const AboutSection = () => {
-  const aboutImage = PlaceHolderImages.find(p => p.id === 'about-me');
+  const image = PlaceHolderImages.find(p => p.id === 'about-me');
+
   return (
     <section id="about" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-primary/10 aspect-[4/5] lg:sticky lg:top-24">
-            {aboutImage ? (
-                <Image
-                src={aboutImage.imageUrl}
+            {image && (
+              <Image
+                src="/anas.png"
                 alt="A portrait of ANAS SBIHI"
-                width={800}
-                height={1000}
-                className="w-full h-full object-cover"
-                data-ai-hint={aboutImage.imageHint}
-                />
-            ) : (
-                <Image
-                    src="/anas.png"
-                    alt="A portrait of ANAS SBIHI"
-                    width={800}
-                    height={1000}
-                    className="w-full h-full object-cover"
-                />
+                fill
+                className="object-cover"
+                data-ai-hint={image.imageHint}
+              />
             )}
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
           </div>
@@ -74,7 +66,7 @@ const AboutSection = () => {
                   <div className="relative">
                     <div className="absolute -left-[30px] top-1.5 h-3 w-3 rounded-full bg-primary"></div>
                     <h4 className="font-bold text-foreground">Alta Formazione Digital Manufacturing Design</h4>
-                    <p className="text-sm text-muted-foreground">Poloveronesi | 2022 - 2026</p>
+                    <p className="text-sm text-muted-foreground"> Poloveronesi  | 2022 - 2026</p>
                   </div>
                 </div>
               </div>
