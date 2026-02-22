@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import logo from '../../public/PRIMO.png';
 
 const Footer = () => {
   const [year, setYear] = useState<number | string>('...');
@@ -15,11 +16,11 @@ const Footer = () => {
       <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="flex items-center space-x-2 opacity-50">
           <Image 
-            src="/logo.png" 
+            src={logo} 
             alt="ANAS SBIHI Logo" 
             width={24} 
             height={24} 
-            className="rounded-sm" 
+            className="rounded-lg shadow-lg shadow-primary/20 brightness-0 invert" 
           />
           <span className="text-sm font-bold tracking-tighter uppercase font-headline">ANAS SBIHI Portfolio</span>
         </div>
