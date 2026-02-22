@@ -2,20 +2,33 @@ import React from 'react';
 import Image from 'next/image';
 import { Button } from './ui/button';
 import { ArrowRight, Briefcase, GraduationCap } from 'lucide-react';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const AboutSection = () => {
+  const aboutImage = PlaceHolderImages.find(p => p.id === 'about-me');
   return (
     <section id="about" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-primary/10 aspect-[4/5] lg:sticky lg:top-24">
-            <Image
-              src="/anas.png"
-              alt="A portrait of ANAS SBIHI"
-              width={800}
-              height={1000}
-              className="w-full h-full object-cover"
-            />
+            {aboutImage ? (
+                <Image
+                src={aboutImage.imageUrl}
+                alt="A portrait of ANAS SBIHI"
+                width={800}
+                height={1000}
+                className="w-full h-full object-cover"
+                data-ai-hint={aboutImage.imageHint}
+                />
+            ) : (
+                <Image
+                    src="/anas.png"
+                    alt="A portrait of ANAS SBIHI"
+                    width={800}
+                    height={1000}
+                    className="w-full h-full object-cover"
+                />
+            )}
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
           </div>
           <div>

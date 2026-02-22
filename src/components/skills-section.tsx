@@ -1,6 +1,6 @@
 import React from 'react';
-import Image from 'next/image';
 import { Progress } from './ui/progress';
+import { Cuboid, DraftingCompass, Leaf, Box, Paintbrush, Film } from 'lucide-react';
 
 const coreSkills = [
   { name: '3d modelling (CAD /polygonal)', level: 95 },
@@ -10,12 +10,12 @@ const coreSkills = [
 ];
 
 const softwareSkills = [
-  { name: "Blender", logo: "/softwares/blender.png" },
-  { name: "SolidWorks", logo: "/softwares/SolidWorks.png" },
-  { name: "Grasshopper", logo: "/softwares/grasshopper.png" },
-  { name: "Rhino", logo: "/softwares/rhino.png" },
-  { name: "Substance Painter", logo: "/softwares/substance.png" },
-  { name: "Adobe Premiere Pro", logo: "/softwares/premiere.png" }
+  { name: "Blender", Icon: Cuboid },
+  { name: "SolidWorks", Icon: DraftingCompass },
+  { name: "Grasshopper", Icon: Leaf },
+  { name: "Rhino", Icon: Box },
+  { name: "Substance Painter", Icon: Paintbrush },
+  { name: "Adobe Premiere Pro", Icon: Film }
 ];
 
 const SkillsSection = () => {
@@ -46,13 +46,7 @@ const SkillsSection = () => {
             {softwareSkills.map((skill, idx) => (
               <div key={idx} className="p-6 rounded-2xl bg-background border border-border flex flex-col items-center justify-center text-center space-y-4 hover:border-primary/50 transition-colors group">
                 <div className="p-4 bg-secondary rounded-xl flex items-center justify-center h-20 w-20">
-                  <Image
-                    src={skill.logo}
-                    alt={`${skill.name} logo`}
-                    width={48}
-                    height={48}
-                    className="object-contain"
-                  />
+                  <skill.Icon className="w-12 h-12 text-foreground/80" />
                 </div>
                 <span className="text-sm font-bold uppercase tracking-tight">{skill.name}</span>
               </div>
