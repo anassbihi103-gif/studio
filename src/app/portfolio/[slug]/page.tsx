@@ -1,4 +1,3 @@
-
 import { projects } from '@/lib/projects';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
@@ -6,7 +5,7 @@ import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, GitCommit, Layers, Sparkles } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 
 export default function ProjectPage({ params }: { params: { slug: string } }) {
@@ -21,105 +20,97 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
   return (
     <>
       <Header />
-      <main className="bg-background">
-        {/* Hero Section */}
-        <section className="relative h-[60vh] flex items-center justify-center text-center overflow-hidden">
-          {heroImage && (
-            <Image
-              src={heroImage.imageUrl}
-              alt={project.title}
-              fill
-              className="object-cover opacity-20 grayscale"
-              data-ai-hint={heroImage.imageHint}
-            />
-          )}
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
-          <div className="relative z-10 container mx-auto px-6">
-            <p className="text-primary font-code tracking-[0.3em] mb-6 uppercase text-sm">
-              {project.category}
-            </p>
-            <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tighter leading-tight bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/70 font-headline drop-shadow-[0_0_10px_hsl(var(--primary)/0.3)]">
-              {project.title}
-            </h1>
+      <main className="bg-background text-foreground overflow-hidden">
+        <div className="container mx-auto px-6 py-24 sm:py-32">
+          
+          <div className="mb-16">
+            <Button asChild variant="outline" className="group rounded-full backdrop-blur-sm bg-background/50 hover:bg-background/80 hover:border-primary transition-all duration-300">
+              <Link href="/#portfolio">
+                <ArrowLeft className="mr-2 h-4 w-4 group-hover:-translate-x-1 transition-transform" />
+                Back to Portfolio
+              </Link>
+            </Button>
           </div>
-        </section>
 
-        {/* Content Section */}
-        <section className="py-24">
-          <div className="container mx-auto px-6 max-w-7xl">
-             <div className="max-w-4xl mx-auto mb-16">
-              <Button asChild variant="outline" className="mb-12 group">
-                <Link href="/#portfolio">
-                  <ArrowLeft className="mr-2 group-hover:-translate-x-1 transition-transform" />
-                  Back to Portfolio
-                </Link>
-              </Button>
+          {/* New Hero */}
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-24 items-center mb-24 lg:mb-32">
+            <div className="lg:col-span-3 text-left">
+              <p className="text-primary font-code tracking-[0.2em] mb-4 uppercase text-sm">
+                {project.category}
+              </p>
+              <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tighter leading-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 font-headline">
+                {project.title}
+              </h1>
+              <p className="mt-6 text-lg text-muted-foreground max-w-xl leading-relaxed">{project.explanation}</p>
             </div>
-            
-            <div className="space-y-24 max-w-4xl mx-auto">
-              {/* Project Overview */}
-              <div>
-                <h2 className="flex items-center text-3xl font-black mb-6 font-headline text-primary">
-                  <GitCommit className="mr-4 flex-shrink-0" />
-                  <span>Project Overview</span>
-                </h2>
-                <p className="text-lg text-muted-foreground leading-relaxed">{project.explanation}</p>
+            {heroImage && (
+              <div className="lg:col-span-2 relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl shadow-black/50">
+                <Image
+                  src={heroImage.imageUrl}
+                  alt={project.title}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  data-ai-hint={heroImage.imageHint}
+                />
+                <div className="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-3xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-80"></div>
               </div>
+            )}
+          </div>
 
-              {/* The Process */}
-              <div>
-                <h2 className="flex items-center text-3xl font-black mb-6 font-headline text-primary">
-                  <Layers className="mr-4 flex-shrink-0" />
-                  <span>The Process</span>
-                </h2>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-12">{project.process.description}</p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                  {project.process.images.map(imageId => {
-                    const img = PlaceHolderImages.find(p => p.id === imageId);
-                    return img ? (
-                      <div key={img.id} className="rounded-2xl overflow-hidden shadow-2xl shadow-black/20 border border-border group">
-                        <Image
-                          src={img.imageUrl}
-                          alt="Project process"
-                          width={800}
-                          height={600}
-                          className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
-                          data-ai-hint={img.imageHint}
-                        />
-                      </div>
-                    ) : null;
-                  })}
-                </div>
+          {/* The Process */}
+          <section className="mb-24 lg:mb-32">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+              <div className="lg:order-last">
+                <h2 className="text-4xl font-black mb-4 font-headline bg-clip-text text-transparent bg-gradient-to-b from-primary to-primary/60">The Process</h2>
+                <p className="text-muted-foreground leading-relaxed">{project.process.description}</p>
               </div>
-              
-              {/* Final Renders */}
-              <div>
-                 <h2 className="flex items-center text-3xl font-black mb-6 font-headline text-primary">
-                  <Sparkles className="mr-4 flex-shrink-0" />
-                  <span>Final Renders</span>
-                </h2>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-12">{project.final.description}</p>
-                <div className="grid grid-cols-1 gap-8">
-                  {project.final.images.map(imageId => {
-                    const img = PlaceHolderImages.find(p => p.id === imageId);
-                    return img ? (
-                      <div key={img.id} className="rounded-2xl overflow-hidden shadow-2xl shadow-black/20 border border-border group">
-                        <Image
-                          src={img.imageUrl}
-                          alt="Final render"
-                          width={1200}
-                          height={800}
-                          className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
-                          data-ai-hint={img.imageHint}
-                        />
-                      </div>
-                    ) : null;
-                  })}
-                </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                {project.process.images.map(imageId => {
+                  const img = PlaceHolderImages.find(p => p.id === imageId);
+                  return img ? (
+                    <div key={img.id} className="rounded-3xl overflow-hidden shadow-2xl shadow-black/50 border border-border/20 group relative aspect-[4/3]">
+                      <Image
+                        src={img.imageUrl}
+                        alt="Project process"
+                        fill
+                        className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
+                        data-ai-hint={img.imageHint}
+                      />
+                      <div className="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-3xl"></div>
+                    </div>
+                  ) : null;
+                })}
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+
+          {/* Final Renders */}
+          <section>
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <h2 className="text-4xl font-black mb-4 font-headline bg-clip-text text-transparent bg-gradient-to-b from-primary to-primary/60">Final Renders</h2>
+              <p className="text-muted-foreground leading-relaxed">{project.final.description}</p>
+            </div>
+            <div className="grid grid-cols-1 gap-8 md:gap-12">
+              {project.final.images.map(imageId => {
+                const img = PlaceHolderImages.find(p => p.id === imageId);
+                return img ? (
+                  <div key={img.id} className="rounded-3xl overflow-hidden shadow-2xl shadow-black/50 border border-border/20 group relative aspect-video">
+                    <Image
+                      src={img.imageUrl}
+                      alt="Final render"
+                      fill
+                      className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
+                      data-ai-hint={img.imageHint}
+                    />
+                    <div className="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-3xl"></div>
+                  </div>
+                ) : null;
+              })}
+            </div>
+          </section>
+
+        </div>
       </main>
       <Footer />
     </>

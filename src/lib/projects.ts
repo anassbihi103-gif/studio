@@ -27,11 +27,11 @@ export const projects: Project[] = [
     explanation: "The 'Easy tear all in one' project involved creating a complete digital twin of a new consumer product, from initial concept sketches to final photorealistic marketing visuals. The goal was to produce a full suite of assets for use in online stores, promotional materials, and investor pitches, highlighting the product's unique features and user benefits in a compelling way.",
     process: {
       description: "Our process began with interpreting the client's 2D schematics and functional requirements. We then moved into 3D modeling using SolidWorks for mechanical precision, followed by polygonal modeling in Blender for aesthetic refinement. Texturing was done in Substance Painter to achieve realistic material finishes. Iterative feedback loops with the client ensured the digital model perfectly matched their vision.",
-      images: ["project-1-process-1", "project-1-process-2"]
+      images: ["project-1-process-1", "project-1-process-2", "process-extra-1", "process-extra-2"]
     },
     final: {
       description: "The final output included a series of high-resolution studio renders showcasing the product from multiple angles, along with lifestyle images demonstrating its use-case. An animated 360-degree turntable video was also produced to provide a dynamic view. All assets were optimized for both web and print.",
-      images: ["project-1-final-1", "project-1-final-2"]
+      images: ["project-1-final-1", "project-1-final-2", "final-extra-1", "final-extra-2"]
     }
   },
   {

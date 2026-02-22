@@ -185,6 +185,30 @@
       "description": "Final render of the viewing gallery",
       "imageUrl": "https://images.unsplash.com/photo-1760174012435-630a17a434ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzcG9ydHMlMjBpbnRlcmlvcnxlbnwwfHx8fDE3NzE4MDA0MjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "sports interior"
+    },
+    {
+      "id": "process-extra-1",
+      "description": "3D modeling interface",
+      "imageUrl": "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHwzZCUyMHNvZnR3YXJlfGVufDB8fHx8MTc3MTgwMTA3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "3d software"
+    },
+    {
+      "id": "process-extra-2",
+      "description": "Material graph editor",
+      "imageUrl": "https://images.unsplash.com/photo-1636302304088-e1bd81885a71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bm9kZSUyMGVkaXRvcnxlbnwwfHx8fDE3NzE4MDEwNzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "node editor"
+    },
+    {
+      "id": "final-extra-1",
+      "description": "Product in a studio setting",
+      "imageUrl": "https://images.unsplash.com/photo-1723879683042-8e72c359ec2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwcm9kdWN0JTIwc3R1ZGlvfGVufDB8fHx8MTc3MTgwMTA3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "product studio"
+    },
+    {
+      "id": "final-extra-2",
+      "description": "Product detail closeup",
+      "imageUrl": "https://images.unsplash.com/photo-1699465043848-bb235ffb64f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcm9kdWN0JTIwY2xvc2V1cHxlbnwwfHx8fDE3NzE4MDEwNzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "product closeup"
     }
   ]
 }
