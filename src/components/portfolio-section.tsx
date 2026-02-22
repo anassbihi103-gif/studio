@@ -1,51 +1,6 @@
 import React from 'react';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { projects } from '@/lib/projects';
 import ProjectCard from './project-card';
-
-const projects = [
-  {
-    id: 1,
-    title: "Easy tear all in one",
-    category: "Environment Design",
-    imageId: "project-1",
-    description: "A high-poly futuristic urban environment created in Unreal Engine 5."
-  },
-  {
-    id: 2,
-    title: "Fanuc Robots",
-    category: "Character Art",
-    imageId: "project-2",
-    description: "Organic-robotic fusion sculpt focusing on sub-surface scattering materials."
-  },
-  {
-    id: 3,
-    title: "Metalfer Products",
-    category: "Product Render",
-    imageId: "project-3",
-    description: "Photorealistic rendering of a concept electric vehicle using Octane."
-  },
-  {
-    id: 4,
-    title: "Smart Kitchen",
-    category: "Motion Graphics",
-    imageId: "project-4",
-    description: "Procedural geometry animation loop for a tech branding project."
-  },
-  {
-    id: 5,
-    title: "Stand for Cappa Pullita",
-    category: "Game Assets",
-    imageId: "project-5",
-    description: "Optimized low-poly modular kit for real-time mobile environments."
-  },
-  {
-    id: 6,
-    title: "Tennis X Gruppo Activa",
-    category: "Interior Design",
-    imageId: "project-6",
-    description: "Complex interior lighting setup utilizing global illumination and Ray Tracing."
-  }
-];
 
 const PortfolioSection = () => {
   return (

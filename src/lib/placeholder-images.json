@@ -2,51 +2,189 @@
   "placeholderImages": [
     {
       "id": "project-1",
-      "description": "Cyberpunk Cityscape project",
-      "imageUrl": "https://images.unsplash.com/photo-1551771685-c367c9127a03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjeWJlcnB1bmslMjBjaXR5fGVufDB8fHx8MTc3MDUxNDg3MXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "cyberpunk city"
+      "description": "Easy Tear product render",
+      "imageUrl": "https://images.unsplash.com/photo-1586868538513-51335a0c5337?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHJvZHVjdCUyMGRlc2lnbnxlbnwwfHx8fDE3NzE4MDA0MjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "product design"
     },
     {
       "id": "project-2",
-      "description": "Bio-Mechanical Construct project",
-      "imageUrl": "https://images.unsplash.com/photo-1742767069929-0c663150b164?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxiaW9tZWNoYW5pY2FsJTIwcm9ib3R8ZW58MHx8fHwxNzcwNTgxNjQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "biomechanical robot"
+      "description": "Fanuc Robot arm in a factory setting",
+      "imageUrl": "https://images.unsplash.com/photo-1553678324-f84674bd7b24?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxpbmR1c3RyaWFsJTIwcm9ib3R8ZW58MHx8fHwxNzcxODAwNDIzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "industrial robot"
     },
     {
       "id": "project-3",
-      "description": "Automotive Visualization project",
-      "imageUrl": "https://images.unsplash.com/photo-1728401915599-b85e1bd25da8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjb25jZXB0JTIwY2FyfGVufDB8fHx8MTc3MDU4MTY0OXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "concept car"
+      "description": "Collection of rendered metal parts",
+      "imageUrl": "https://images.unsplash.com/photo-1758873263428-f4b2edb45fe1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMGNvbXBvbmVudHN8ZW58MHx8fHwxNzcxODAwNDIzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "metal components"
     },
     {
       "id": "project-4",
-      "description": "Abstract Geometry project",
-      "imageUrl": "https://images.unsplash.com/photo-1595411425732-e69c1abe2763?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhYnN0cmFjdCUyMGdlb21ldHJ5fGVufDB8fHx8MTc3MDQ4NDk0OXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "abstract geometry"
+      "description": "A futuristic smart kitchen interior",
+      "imageUrl": "https://images.unsplash.com/photo-1740479783022-1006a2138849?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzbWFydCUyMGtpdGNoZW58ZW58MHx8fHwxNzcxODAwNDIzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smart kitchen"
     },
     {
       "id": "project-5",
-      "description": "Ancient Ruins project",
-      "imageUrl": "https://images.unsplash.com/photo-1573540374799-d527e9ee392b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhbmNpZW50JTIwcnVpbnN8ZW58MHx8fHwxNzcwNTgxNjQzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "ancient ruins"
+      "description": "Exhibition stand for Cappa Pulita",
+      "imageUrl": "https://images.unsplash.com/photo-1766802981817-776406db6807?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxleGhpYml0aW9uJTIwc3RhbmR8ZW58MHx8fHwxNzcxODAwNDI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "exhibition stand"
     },
     {
       "id": "project-6",
-      "description": "The Alchemist's Study project",
-      "imageUrl": "https://images.unsplash.com/photo-1558596602-b09a835e8bc6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YWxjaGVtaXN0JTIwc3R1ZHl8ZW58MHx8fHwxNzcwNTgxNjQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "alchemist study"
-    },
-    {
-      "id": "project-7",
-      "description": "Your Smart Kitchen project",
-      "imageUrl": "https://images.unsplash.com/photo-1738045117493-27c33be007ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c21hcnQlMjBraXRjaGVufGVufDB8fHx8MTc3MDU4MTY0OXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "smart kitchen"
+      "description": "Interior of a modern tennis club",
+      "imageUrl": "https://images.unsplash.com/photo-1697636758040-f18d66d8b206?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx0ZW5uaXMlMjBjbHVifGVufDB8fHx8MTc3MTgwMDQyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tennis club"
     },
     {
       "id": "about-me",
       "description": "A portrait of the artist",
       "imageUrl": "https://images.unsplash.com/photo-1585131545183-6083dfc2f79c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cG9ydHJhaXQlMjBwZXJzb258ZW58MHx8fHwxNzcwNjc4NzY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "portrait person"
+    },
+    {
+      "id": "project-1-process-1",
+      "description": "Initial sketch for Easy tear",
+      "imageUrl": "https://images.unsplash.com/photo-1600697395543-ef3ee6e9af7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwcm9kdWN0JTIwc2tldGNofGVufDB8fHx8MTc3MTgwMDQyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "product sketch"
+    },
+    {
+      "id": "project-1-process-2",
+      "description": "3D blockout for Easy tear",
+      "imageUrl": "https://images.unsplash.com/photo-1650081221669-fccab00c76a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHwzZCUyMG1vZGVsJTIwd2lyZWZyYW1lfGVufDB8fHx8MTc3MTc3OTk4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "3d model wireframe"
+    },
+    {
+      "id": "project-1-final-1",
+      "description": "Final render of Easy tear",
+      "imageUrl": "https://images.unsplash.com/photo-1743535681080-a2380bef5a12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwcm9kdWN0JTIwcmVuZGVyfGVufDB8fHx8MTc3MTgwMDQyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "product render"
+    },
+    {
+      "id": "project-1-final-2",
+      "description": "Lifestyle render of Easy tear",
+      "imageUrl": "https://images.unsplash.com/photo-1765446905052-6fcfc9e59846?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwcm9kdWN0JTIwbGlmZXN0eWxlfGVufDB8fHx8MTc3MTgwMDQyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "product lifestyle"
+    },
+    {
+      "id": "project-2-process-1",
+      "description": "Wireframe of Fanuc robot",
+      "imageUrl": "https://images.unsplash.com/photo-1590562177087-ca6af9bb82ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxyb2JvdCUyMHdpcmVmcmFtZXxlbnwwfHx8fDE3NzE4MDA0MjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "robot wireframe"
+    },
+    {
+      "id": "project-2-process-2",
+      "description": "Animation storyboard",
+      "imageUrl": "https://images.unsplash.com/photo-1730641884360-0f6bb86e70e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhbmltYXRpb24lMjBzdG9yeWJvYXJkfGVufDB8fHx8MTc3MTgwMDQyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "animation storyboard"
+    },
+    {
+      "id": "project-2-final-1",
+      "description": "Close-up render of robot arm",
+      "imageUrl": "https://images.unsplash.com/photo-1680783954745-3249be59e527?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxyb2JvdCUyMGFybXxlbnwwfHx8fDE3NzE2ODY1ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "robot arm"
+    },
+    {
+      "id": "project-2-final-2",
+      "description": "Wide shot of factory animation",
+      "imageUrl": "https://images.unsplash.com/photo-1701328778019-e95dedbf5346?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxyb2JvdCUyMGZhY3Rvcnl8ZW58MHx8fHwxNzcxNjg1MTcwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "robot factory"
+    },
+    {
+      "id": "project-3-process-1",
+      "description": "CAD model of a metal part",
+      "imageUrl": "https://images.unsplash.com/photo-1715499019708-46093d2fd92e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjYWQlMjBtb2RlbHxlbnwwfHx8fDE3NzE4MDA0MjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cad model"
+    },
+    {
+      "id": "project-3-process-2",
+      "description": "Material setup in Substance Painter",
+      "imageUrl": "https://images.unsplash.com/photo-1562447141-5ab151b2638f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzdWJzdGFuY2UlMjBwYWludGVyfGVufDB8fHx8MTc3MTgwMDQyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "substance painter"
+    },
+    {
+      "id": "project-3-final-1",
+      "description": "Render of a brushed steel component",
+      "imageUrl": "https://images.unsplash.com/photo-1610344249394-f06a84847f82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzdGVlbCUyMHByb2R1Y3R8ZW58MHx8fHwxNzcxODAwNDIzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "steel product"
+    },
+    {
+      "id": "project-3-final-2",
+      "description": "Render of chrome plated parts",
+      "imageUrl": "https://images.unsplash.com/photo-1668853907299-eb2c629174f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjaHJvbWUlMjBwcm9kdWN0fGVufDB8fHx8MTc3MTgwMDQyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chrome product"
+    },
+    {
+      "id": "project-4-process-1",
+      "description": "Concept sketch for smart kitchen",
+      "imageUrl": "https://images.unsplash.com/photo-1651107786750-fbefe0bdd0a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxraXRjaGVuJTIwc2tldGNofGVufDB8fHx8MTc3MTgwMDQyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kitchen sketch"
+    },
+    {
+      "id": "project-4-process-2",
+      "description": "3D clay model of kitchen layout",
+      "imageUrl": "https://images.unsplash.com/photo-1634175734730-feeb73322946?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHwzZCUyMGNsYXklMjByZW5kZXJ8ZW58MHx8fHwxNzcxODAwNDI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "3d clay render"
+    },
+    {
+      "id": "project-4-final-1",
+      "description": "Final render of kitchen island",
+      "imageUrl": "https://images.unsplash.com/photo-1622372738946-62e02505feb3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtb2Rlcm4lMjBraXRjaGVufGVufDB8fHx8MTc3MTc0NTAxMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern kitchen"
+    },
+    {
+      "id": "project-4-final-2",
+      "description": "Detail shot of integrated smart display",
+      "imageUrl": "https://images.unsplash.com/photo-1706774609219-56c61f8b3c51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzbWFydCUyMGhvbWV8ZW58MHx8fHwxNzcxNzk1ODgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smart home"
+    },
+    {
+      "id": "project-5-process-1",
+      "description": "Modular grid layout for the stand",
+      "imageUrl": "https://images.unsplash.com/photo-1721244653769-6001b9b4778f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxsYXlvdXQlMjBwbGFufGVufDB8fHx8MTc3MTgwMDQyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "layout plan"
+    },
+    {
+      "id": "project-5-process-2",
+      "description": "3D model of the stand structure",
+      "imageUrl": "https://images.unsplash.com/photo-1634207284450-f6ad4451b94f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHwzZCUyMHN0cnVjdHVyZXxlbnwwfHx8fDE3NzE4MDA0MjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "3d structure"
+    },
+    {
+      "id": "project-5-final-1",
+      "description": "Front view of the complete exhibition stand",
+      "imageUrl": "https://images.unsplash.com/photo-1767555843619-19966e625551?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxleGhpYml0aW9uJTIwYm9vdGh8ZW58MHx8fHwxNzcxODAwNDI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "exhibition booth"
+    },
+    {
+      "id": "project-5-final-2",
+      "description": "Detail view of the product display area",
+      "imageUrl": "https://images.unsplash.com/photo-1711779321822-18c979a2362b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9kdWN0JTIwZGlzcGxheXxlbnwwfHx8fDE3NzE4MDA0MjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "product display"
+    },
+    {
+      "id": "project-6-process-1",
+      "description": "Moodboard for the tennis club interior",
+      "imageUrl": "https://images.unsplash.com/photo-1696483797754-45c7aa913724?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkZXNpZ24lMjBtb29kYm9hcmR8ZW58MHx8fHwxNzcxODAwNDI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "design moodboard"
+    },
+    {
+      "id": "project-6-process-2",
+      "description": "Lighting test render for the lounge",
+      "imageUrl": "https://images.unsplash.com/photo-1753345405110-1f39f34986d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxsaWdodGluZyUyMHRlc3R8ZW58MHx8fHwxNzcxODAwNDI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "lighting test"
+    },
+    {
+      "id": "project-6-final-1",
+      "description": "Final render of the tennis club lounge area",
+      "imageUrl": "https://images.unsplash.com/photo-1687180498602-5a1046defaa4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjBsb3VuZ2V8ZW58MHx8fHwxNzcxNzY1Mzk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "luxury lounge"
+    },
+    {
+      "id": "project-6-final-2",
+      "description": "Final render of the viewing gallery",
+      "imageUrl": "https://images.unsplash.com/photo-1760174012435-630a17a434ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzcG9ydHMlMjBpbnRlcmlvcnxlbnwwfHx8fDE3NzE4MDA0MjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sports interior"
     }
   ]
 }
