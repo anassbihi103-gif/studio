@@ -61,7 +61,7 @@ export const projects: Project[] = [
           description: "Complete CAD files and detailed prototype.\n\nHigh-quality photorealistic renders and dynamic animations for marketing.\n\nDocumentation of design process, iterations, and design rationale."
         }
       ],
-      images: ["project-1-process-1", "project-1-process-2", "process-extra-1", "process-extra-2"]
+      images: ["project-1-process-3", "project-1-process-1", "project-4-process-1", "project-1-process-2", "process-extra-2", "project-1-process-4", "project-1-process-5"]
     },
     final: {
       description: "The final output included a series of high-resolution studio renders showcasing the product from multiple angles, along with lifestyle images demonstrating its use-case. An animated 360-degree turntable video was also produced to provide a dynamic view. All assets were optimized for both web and print.",

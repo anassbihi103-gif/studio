@@ -60,37 +60,46 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 
           {/* The Process */}
           <section className="mb-24 lg:mb-32">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
-              <div className="lg:order-last">
-                <h2 className="text-4xl font-black mb-8 font-headline bg-clip-text text-transparent bg-gradient-to-b from-primary to-primary/60">The Process</h2>
-                <div className="space-y-8">
-                  {project.process.steps.map((step, index) => (
-                    <div key={index}>
-                      {step.title && (
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <h2 className="text-4xl font-black mb-4 font-headline bg-clip-text text-transparent bg-gradient-to-b from-primary to-primary/60">The Process</h2>
+              <p className="text-muted-foreground leading-relaxed">A step-by-step journey from concept to creation.</p>
+            </div>
+
+            <div className="relative">
+              {/* The vertical timeline bar */}
+              <div className="absolute left-1/2 -translate-x-1/2 h-full w-0.5 bg-border/20 hidden lg:block" />
+
+              <div className="space-y-24">
+                {project.process.steps.map((step, index) => {
+                  const image = PlaceHolderImages.find(p => p.id === project.process.images[index]);
+                  const isEven = index % 2 === 0;
+
+                  return (
+                    <div key={index} className="relative grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                      {/* Timeline Dot */}
+                      <div className="absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-primary border-4 border-background hidden lg:block"></div>
+
+                      <div className={`lg:col-start-${isEven ? 1 : 2} lg:row-start-1 lg:text-${isEven ? 'right' : 'left'}`}>
                         <h3 className="text-2xl font-bold mb-3 text-primary drop-shadow-[0_0_8px_hsl(var(--primary)/0.6)]">
                           {step.title}
                         </h3>
+                        <p className="text-muted-foreground leading-relaxed whitespace-pre-line">{step.description}</p>
+                      </div>
+
+                      {image && (
+                        <div className={`relative aspect-video rounded-3xl overflow-hidden shadow-2xl shadow-black/50 border border-border/20 group lg:col-start-${isEven ? 2 : 1} lg:row-start-1`}>
+                          <Image
+                            src={image.imageUrl}
+                            alt={step.title || 'Process step image'}
+                            fill
+                            className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
+                            data-ai-hint={image.imageHint}
+                          />
+                          <div className="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-3xl"></div>
+                        </div>
                       )}
-                      <p className="text-muted-foreground leading-relaxed whitespace-pre-line">{step.description}</p>
                     </div>
-                  ))}
-                </div>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:sticky lg:top-24">
-                {project.process.images.map(imageId => {
-                  const img = PlaceHolderImages.find(p => p.id === imageId);
-                  return img ? (
-                    <div key={img.id} className="rounded-3xl overflow-hidden shadow-2xl shadow-black/50 border border-border/20 group relative aspect-[4/3]">
-                      <Image
-                        src={img.imageUrl}
-                        alt="Project process"
-                        fill
-                        className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
-                        data-ai-hint={img.imageHint}
-                      />
-                      <div className="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-3xl"></div>
-                    </div>
-                  ) : null;
+                  );
                 })}
               </div>
             </div>

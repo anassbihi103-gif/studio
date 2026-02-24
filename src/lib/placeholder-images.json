@@ -55,6 +55,24 @@
       "imageHint": "3d model wireframe"
     },
     {
+      "id": "project-1-process-3",
+      "description": "Dashboard showing user analytics",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbmFseXRpY3MlMjBkYXNoYm9hcmR8ZW58MHx8fHwxNzczMzgzMTAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "analytics dashboard"
+    },
+    {
+      "id": "project-1-process-4",
+      "description": "Engineer testing a prototype in a lab",
+      "imageUrl": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYW51ZmFjdHVyaW5nJTIwdGVzdGluZ3xlbnwwfHx8fDE3NzMzODM0ODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "manufacturing testing"
+    },
+    {
+      "id": "project-1-process-5",
+      "description": "CAD drawing on a computer screen",
+      "imageUrl": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjYWQlMjBkcml2aW5nfGVufDB8fHx8MTc3MzM4MzUzMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cad drawing"
+    },
+    {
       "id": "project-1-final-1",
       "description": "Final render of Easy tear",
       "imageUrl": "https://images.unsplash.com/photo-1743535681080-a2380bef5a12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwcm9kdWN0JTIwcmVuZGVyfGVufDB8fHx8MTc3MTgwMDQyNHww&ixlib=rb-4.1.0&q=80&w=1080",
