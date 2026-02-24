@@ -7,6 +7,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
+import React from 'react';
 
 export default function ProjectPage({ params }: { params: { slug: string } }) {
   const project = projects.find(p => p.slug === params.slug);
@@ -65,20 +66,14 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
               <p className="text-muted-foreground leading-relaxed">A step-by-step journey from concept to creation.</p>
             </div>
 
-            <div className="relative">
-              {/* The vertical timeline bar */}
-              <div className="absolute left-1/2 -translate-x-1/2 h-full w-0.5 bg-border/20 hidden lg:block" />
+            <div className="flex flex-col items-center">
+              {project.process.steps.map((step, index) => {
+                const image = PlaceHolderImages.find(p => p.id === project.process.images[index]);
+                const isEven = index % 2 === 0;
 
-              <div className="space-y-24">
-                {project.process.steps.map((step, index) => {
-                  const image = PlaceHolderImages.find(p => p.id === project.process.images[index]);
-                  const isEven = index % 2 === 0;
-
-                  return (
-                    <div key={index} className="relative grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-                      {/* Timeline Dot */}
-                      <div className="absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-primary border-4 border-background hidden lg:block"></div>
-
+                return (
+                  <React.Fragment key={index}>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full max-w-7xl mx-auto px-6">
                       <div className={`lg:col-start-${isEven ? 1 : 2} lg:row-start-1 lg:text-${isEven ? 'right' : 'left'}`}>
                         <h3 className="text-2xl font-bold mb-3 text-primary drop-shadow-[0_0_8px_hsl(var(--primary)/0.6)]">
                           {step.title}
@@ -99,9 +94,46 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                         </div>
                       )}
                     </div>
-                  );
-                })}
-              </div>
+
+                    {index < project.process.steps.length - 1 && (
+                      <div className="h-32 w-full max-w-xl hidden lg:block my-4">
+                        <svg width="100%" height="100%" viewBox="0 0 400 128" preserveAspectRatio="none">
+                          <defs>
+                            <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                              <feGaussianBlur stdDeviation="4" result="glow" />
+                              <feMerge>
+                                <feMergeNode in="glow" />
+                                <feMergeNode in="SourceGraphic" />
+                              </feMerge>
+                            </filter>
+                          </defs>
+                          {isEven ? (
+                            // Path from right-top to left-bottom
+                            <path
+                              d="M 380 10 C 200 10, 200 118, 20 118"
+                              stroke="hsl(var(--primary))"
+                              strokeWidth="2"
+                              fill="none"
+                              filter="url(#glow)"
+                              className="opacity-50"
+                            />
+                          ) : (
+                            // Path from left-top to right-bottom
+                            <path
+                              d="M 20 10 C 200 10, 200 118, 380 118"
+                              stroke="hsl(var(--primary))"
+                              strokeWidth="2"
+                              fill="none"
+                              filter="url(#glow)"
+                              className="opacity-50"
+                            />
+                          )}
+                        </svg>
+                      </div>
+                    )}
+                  </React.Fragment>
+                );
+              })}
             </div>
           </section>
 
