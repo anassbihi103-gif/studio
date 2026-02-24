@@ -1,17 +1,17 @@
 import { Button } from './ui/button';
+import Image from 'next/image';
 
 
 const HeroSection = () => {
   return (
     <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 w-full h-full overflow-hidden opacity-40 grayscale-[20%]">
-        <iframe
-          src="https://player.vimeo.com/video/1163080800?background=1&loop=1&autopause=0"
-          allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-          referrerPolicy="strict-origin-when-cross-origin"
-          className="pointer-events-none absolute left-1/2 top-1/2 h-[56.25vw] min-h-screen w-screen min-w-[177.78vh] -translate-x-1/2 -translate-y-1/2 border-0"
-          title="GrabberVideo"
-        ></iframe>
+      <div className="absolute inset-0 w-full h-full overflow-hidden opacity-10 invert">
+        <Image
+          src="/Easytear.png"
+          alt="Easytear background"
+          fill
+          className="object-cover"
+        />
       </div>
       <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/50 to-background"></div>
 
