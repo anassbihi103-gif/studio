@@ -60,12 +60,23 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 
           {/* The Process */}
           <section className="mb-24 lg:mb-32">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
               <div className="lg:order-last">
-                <h2 className="text-4xl font-black mb-4 font-headline bg-clip-text text-transparent bg-gradient-to-b from-primary to-primary/60">The Process</h2>
-                <p className="text-muted-foreground leading-relaxed whitespace-pre-line">{project.process.description}</p>
+                <h2 className="text-4xl font-black mb-8 font-headline bg-clip-text text-transparent bg-gradient-to-b from-primary to-primary/60">The Process</h2>
+                <div className="space-y-8">
+                  {project.process.steps.map((step, index) => (
+                    <div key={index}>
+                      {step.title && (
+                        <h3 className="text-2xl font-bold mb-3 text-primary drop-shadow-[0_0_8px_hsl(var(--primary)/0.6)]">
+                          {step.title}
+                        </h3>
+                      )}
+                      <p className="text-muted-foreground leading-relaxed whitespace-pre-line">{step.description}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:sticky lg:top-24">
                 {project.process.images.map(imageId => {
                   const img = PlaceHolderImages.find(p => p.id === imageId);
                   return img ? (

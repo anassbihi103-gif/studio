@@ -1,3 +1,8 @@
+export type ProcessStep = {
+  title: string;
+  description: string;
+};
+
 export type Project = {
   id: number;
   slug: string;
@@ -7,7 +12,7 @@ export type Project = {
   description: string;
   explanation: string;
   process: {
-    description: string;
+    steps: ProcessStep[];
     images: string[];
   };
   final: {
@@ -26,7 +31,36 @@ export const projects: Project[] = [
     description: "A comprehensive design and rendering project for an innovative consumer product.",
     explanation: "This project centers on redesigning an existing consumer gadget to address limitations and errors present in previous versions, creating a more advanced and feature-rich iteration. The updated design incorporates improved functionality, enhanced performance, and a futuristic aesthetic while maintaining user-friendly operation.\n\nTo support visualization and marketing, a complete set of photorealistic renders was produced, showcasing the product’s refined design, new features, and modern appeal. These visuals are tailored for both marketing campaigns and social media promotion. Additionally, artistic animations were developed to highlight the gadget’s advanced features and demonstrate its interaction in dynamic, real-world scenarios.\n\nThe project highlights the integration of technical problem-solving, forward-thinking design, and high-quality visual communication, demonstrating a holistic approach to product development and presentation.",
     process: {
-      description: "1. Research & Analysis\n\nEvaluated the previous version of the gadget to identify functional errors, user pain points, and design limitations. Conducted market and competitor research to define opportunities for innovation and advanced features. Collected user feedback to understand needs and expectations for the new iteration.\n\n2. Design Thinking & Ideation\n\nApplied design thinking methodology to generate multiple concepts for an upgraded version. Focused on combining enhanced functionality, futuristic aesthetics, and ergonomic usability. Created initial sketches, concept boards, and feature lists for evaluation.\n\n3. Concept Development\n\nSelected the most promising design concept and refined it with detailed technical sketches and CAD models. Integrated new advanced features, optimized component placement, and ensured feasibility for production.\n\n4. 3D Modeling & Prototype Design\n\nDeveloped a full 3D model of the gadget using CAD software, incorporating precise dimensions and mechanical details. Produced a physical or virtual prototype to test form, ergonomics, and functionality.\n\n5. Visual Communication & Marketing Assets\n\nCreated photorealistic renders highlighting the new design, features, and futuristic look. Developed artistic animations to showcase product interaction, use cases, and advanced functionality. Tailored visual content for social media, marketing campaigns, and portfolio presentation.\n\n6. Testing & Iteration\n\nEvaluated the prototype for usability, durability, and overall performance. Implemented refinements based on testing feedback to ensure a polished final product.\n\n7. Final Deliverables\n\nComplete CAD files and detailed prototype. High-quality photorealistic renders and dynamic animations for marketing. Documentation of design process, iterations, and design rationale.",
+      steps: [
+        {
+          title: "1. Research & Analysis",
+          description: "Evaluated the previous version of the gadget to identify functional errors, user pain points, and design limitations.\n\nConducted market and competitor research to define opportunities for innovation and advanced features.\n\nCollected user feedback to understand needs and expectations for the new iteration."
+        },
+        {
+          title: "2. Design Thinking & Ideation",
+          description: "Applied design thinking methodology to generate multiple concepts for an upgraded version.\n\nFocused on combining enhanced functionality, futuristic aesthetics, and ergonomic usability.\n\nCreated initial sketches, concept boards, and feature lists for evaluation."
+        },
+        {
+          title: "3. Concept Development",
+          description: "Selected the most promising design concept and refined it with detailed technical sketches and CAD models.\n\nIntegrated new advanced features, optimized component placement, and ensured feasibility for production."
+        },
+        {
+          title: "4. 3D Modeling & Prototype Design",
+          description: "Developed a full 3D model of the gadget using CAD software, incorporating precise dimensions and mechanical details.\n\nProduced a physical or virtual prototype to test form, ergonomics, and functionality."
+        },
+        {
+          title: "5. Visual Communication & Marketing Assets",
+          description: "Created photorealistic renders highlighting the new design, features, and futuristic look.\n\nDeveloped artistic animations to showcase product interaction, use cases, and advanced functionality.\n\nTailored visual content for social media, marketing campaigns, and portfolio presentation."
+        },
+        {
+          title: "6. Testing & Iteration",
+          description: "Evaluated the prototype for usability, durability, and overall performance.\n\nImplemented refinements based on testing feedback to ensure a polished final product."
+        },
+        {
+          title: "7. Final Deliverables",
+          description: "Complete CAD files and detailed prototype.\n\nHigh-quality photorealistic renders and dynamic animations for marketing.\n\nDocumentation of design process, iterations, and design rationale."
+        }
+      ],
       images: ["project-1-process-1", "project-1-process-2", "process-extra-1", "process-extra-2"]
     },
     final: {
@@ -43,7 +77,10 @@ export const projects: Project[] = [
     description: "High-fidelity visualization of industrial robots for trade show and marketing applications.",
     explanation: "This project focused on creating a visually striking and technically accurate animation of Fanuc robotic arms in a simulated factory environment. The objective was to showcase the robots' precision, speed, and capabilities for an international trade show booth and for use in digital marketing campaigns.",
     process: {
-      description: "We started by importing the client's CAD models of the robots into Blender. A significant amount of work went into retopology and optimization for animation. We then rigged the models for realistic movement and created a futuristic factory setting. The animation was storyboarded and previz'd before final rendering.",
+      steps: [{
+        title: "",
+        description: "We started by importing the client's CAD models of the robots into Blender. A significant amount of work went into retopology and optimization for animation. We then rigged the models for realistic movement and created a futuristic factory setting. The animation was storyboarded and previz'd before final rendering."
+      }],
       images: ["project-2-process-1", "project-2-process-2"]
     },
     final: {
@@ -60,7 +97,10 @@ export const projects: Project[] = [
     description: "Creation of a complete 3D product catalog for a manufacturer of metal components.",
     explanation: "Metalfer required a full digital catalog of their extensive product line. Traditional photography was proving to be costly and inflexible. We proposed a CGI solution to create a consistent, high-quality, and easily updatable set of images for their web and print catalogs.",
     process: {
-      description: "The workflow involved modeling dozens of unique metal products based on engineering drawings. We developed a master Blender scene with a lighting setup that would provide consistent, clean results across all products. A custom material library was built in Substance Painter to represent various metal finishes like brushed steel, chrome, and anodized aluminum.",
+      steps: [{
+        title: "",
+        description: "The workflow involved modeling dozens of unique metal products based on engineering drawings. We developed a master Blender scene with a lighting setup that would provide consistent, clean results across all products. A custom material library was built in Substance Painter to represent various metal finishes like brushed steel, chrome, and anodized aluminum."
+      }],
       images: ["project-3-process-1", "project-3-process-2"]
     },
     final: {
@@ -77,7 +117,10 @@ export const projects: Project[] = [
     description: "Photorealistic renders of a futuristic smart kitchen concept for a design competition.",
     explanation: "For a speculative design competition, we conceptualized and visualized a 'Smart Kitchen' of the future. The project aimed to explore how technology could be seamlessly integrated into the home environment to enhance convenience, sustainability, and culinary creativity.",
     process: {
-      description: "The entire kitchen was designed and modeled from scratch. This included custom cabinetry, integrated smart appliances, and holographic displays. We paid special attention to lighting and materials to create a warm, inviting, yet technologically advanced atmosphere. The scene was rendered in Blender using Cycles for maximum realism.",
+      steps: [{
+        title: "",
+        description: "The entire kitchen was designed and modeled from scratch. This included custom cabinetry, integrated smart appliances, and holographic displays. We paid special attention to lighting and materials to create a warm, inviting, yet technologically advanced atmosphere. The scene was rendered in Blender using Cycles for maximum realism."
+      }],
       images: ["project-4-process-1", "project-4-process-2"]
     },
     final: {
@@ -94,7 +137,10 @@ export const projects: Project[] = [
     description: "Design and visualization of a modular exhibition stand for a trade show.",
     explanation: "Cappa Pulita needed a compelling and reusable exhibition stand design for their upcoming trade show circuit. The brief required a design that was visually impactful, modular for different booth sizes, and effectively communicated their brand identity.",
     process: {
-      description: "We went through several design iterations, starting with rough sketches and moving to 3D blockouts to test different layouts and configurations. The final design was modeled in detail, including product displays, lighting fixtures, and branding elements. We created a set of assembly instruction visuals based on the 3D model.",
+      steps: [{
+        title: "",
+        description: "We went through several design iterations, starting with rough sketches and moving to 3D blockouts to test different layouts and configurations. The final design was modeled in detail, including product displays, lighting fixtures, and branding elements. We created a set of assembly instruction visuals based on the 3D model."
+      }],
       images: ["project-5-process-1", "project-5-process-2"]
     },
     final: {
@@ -111,7 +157,10 @@ export const projects: Project[] = [
     description: "Interior design and visualization for a premium indoor tennis facility.",
     explanation: "Gruppo Activa commissioned us to design the interior of a new luxury indoor tennis club. The goal was to create a premium, modern, and energetic environment for members, including the lounge, changing rooms, and viewing areas.",
     process: {
-      description: "Working from the architect's base plans, we developed the full interior concept. This included selecting materials, designing custom furniture, and creating a lighting scheme. We built a detailed 3D model of the entire space and produced a series of test renders to refine the look and feel in collaboration with the client.",
+      steps: [{
+        title: "",
+        description: "Working from the architect's base plans, we developed the full interior concept. This included selecting materials, designing custom furniture, and creating a lighting scheme. We built a detailed 3D model of the entire space and produced a series of test renders to refine the look and feel in collaboration with the client."
+      }],
       images: ["project-6-process-1", "project-6-process-2"]
     },
     final: {
