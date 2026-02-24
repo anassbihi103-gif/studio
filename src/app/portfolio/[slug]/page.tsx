@@ -37,12 +37,12 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-24 items-center mb-24 lg:mb-32">
             <div className="lg:col-span-3 text-left relative">
               {project.slug === 'easy-tear-all-in-one' && (
-                <div className="absolute inset-0 -z-10 opacity-5 pointer-events-none">
+                <div className="absolute inset-0 -z-10 opacity-10 pointer-events-none invert">
                   <Image 
                       src="/Easytear.png" 
                       alt="Easy Tear Logo Background" 
                       fill 
-                      className="object-contain object-center invert scale-125"
+                      className="object-contain object-center scale-150"
                   />
                 </div>
               )}
