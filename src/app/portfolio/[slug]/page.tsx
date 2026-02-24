@@ -41,7 +41,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
               <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tighter leading-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 font-headline">
                 {project.title}
               </h1>
-              <p className="mt-6 text-lg text-muted-foreground max-w-xl leading-relaxed">{project.explanation}</p>
+              <p className="mt-6 text-lg text-muted-foreground max-w-xl leading-relaxed whitespace-pre-line">{project.explanation}</p>
             </div>
             {heroImage && (
               <div className="lg:col-span-2 relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl shadow-black/50">
@@ -63,7 +63,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
               <div className="lg:order-last">
                 <h2 className="text-4xl font-black mb-4 font-headline bg-clip-text text-transparent bg-gradient-to-b from-primary to-primary/60">The Process</h2>
-                <p className="text-muted-foreground leading-relaxed">{project.process.description}</p>
+                <p className="text-muted-foreground leading-relaxed whitespace-pre-line">{project.process.description}</p>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 {project.process.images.map(imageId => {
