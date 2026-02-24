@@ -36,6 +36,11 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           {/* New Hero */}
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-24 items-center mb-24 lg:mb-32">
             <div className="lg:col-span-3 text-left">
+              {project.slug === 'easy-tear-all-in-one' && (
+                <div className="relative h-16 mb-6 w-48">
+                  <Image src="/Easytear.png" alt="Easy Tear Logo" fill className="object-contain object-left invert" />
+                </div>
+              )}
               <p className="text-primary font-code tracking-[0.2em] mb-4 uppercase text-sm">
                 {project.category}
               </p>
