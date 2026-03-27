@@ -1,3 +1,4 @@
+
 import { projects } from '@/lib/projects';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
@@ -20,8 +21,19 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 
   return (
     <>
+      {project.slug === 'easy-tear-all-in-one' && (
+        <div className="fixed top-0 left-0 w-full h-screen -z-10 opacity-20">
+          <Image
+            src="/Easytear.png"
+            alt="Easy Tear Logo Background"
+            layout="fill"
+            objectFit="cover"
+            className="brightness-0 invert"
+          />
+        </div>
+      )}
       <Header />
-      <main className="bg-background text-foreground overflow-hidden">
+      <main className={`text-foreground overflow-hidden ${project.slug === 'easy-tear-all-in-one' ? 'bg-transparent' : 'bg-background'}`}>
         <div className="container mx-auto px-6 py-24 sm:py-32">
           
           <div className="mb-16">
@@ -34,16 +46,11 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           </div>
 
           {/* New Hero */}
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-24 items-center mb-24 lg:mb-32">
-            <div className="lg:col-span-3 text-left relative">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center mb-24 lg:mb-32">
+            <div className="lg:col-span-1 text-left relative">
               {project.slug === 'easy-tear-all-in-one' && (
-                <div className="absolute inset-0 -z-10 opacity-10 pointer-events-none invert">
-                  <Image 
-                      src="/Easytear.png" 
-                      alt="Easy Tear Logo Background" 
-                      fill 
-                      className="object-contain object-center scale-150"
-                  />
+                <div className="mb-8">
+                  <Image src="/Easytear.png" alt="Easy Tear Logo" width={200} height={50} className="brightness-0 invert opacity-80" />
                 </div>
               )}
               <p className="text-primary font-code tracking-[0.2em] mb-4 uppercase text-sm">
@@ -52,10 +59,9 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
               <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tighter leading-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 font-headline">
                 {project.title}
               </h1>
-              <p className="mt-6 text-lg text-muted-foreground max-w-xl leading-relaxed whitespace-pre-line">{project.explanation}</p>
             </div>
             {heroImage && (
-              <div className="lg:col-span-2 relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl shadow-black/50">
+              <div className="lg:col-span-1 relative aspect-video rounded-3xl overflow-hidden shadow-2xl shadow-black/50">
                 <Image
                   src={heroImage.imageUrl}
                   alt={project.title}
@@ -64,21 +70,28 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                   data-ai-hint={heroImage.imageHint}
                 />
                 <div className="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-3xl"></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-80"></div>
               </div>
             )}
           </div>
+          
+          {/* Problem Statement */}
+          <section className="mb-24 lg:mb-32">
+            <div className="text-center max-w-3xl mx-auto">
+              <h2 className="text-4xl font-black mb-4 font-headline bg-clip-text text-transparent bg-gradient-to-b from-primary to-primary/60">Problem Statement</h2>
+              <p className="mt-6 text-lg text-muted-foreground leading-relaxed whitespace-pre-line">{project.problemStatement}</p>
+            </div>
+          </section>
 
-          {/* The Process */}
+          {/* Concept Development */}
           <section className="mb-24 lg:mb-32">
             <div className="text-center max-w-3xl mx-auto mb-16">
-              <h2 className="text-4xl font-black mb-4 font-headline bg-clip-text text-transparent bg-gradient-to-b from-primary to-primary/60">The Process</h2>
+              <h2 className="text-4xl font-black mb-4 font-headline bg-clip-text text-transparent bg-gradient-to-b from-primary to-primary/60">Concept Development</h2>
               <p className="text-muted-foreground leading-relaxed">A step-by-step journey from concept to creation.</p>
             </div>
 
             <div className="flex flex-col items-center">
-              {project.process.steps.map((step, index) => {
-                const image = PlaceHolderImages.find(p => p.id === project.process.images[index]);
+              {project.conceptDevelopment.steps.map((step, index) => {
+                const image = PlaceHolderImages.find(p => p.id === project.conceptDevelopment.images[index]);
                 const isEven = index % 2 === 0;
 
                 return (
@@ -105,7 +118,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                       )}
                     </div>
 
-                    {index < project.process.steps.length - 1 && (
+                    {index < project.conceptDevelopment.steps.length - 1 && (
                       <div className="h-32 w-full max-w-xl hidden lg:block my-4">
                         <svg width="100%" height="100%" viewBox="0 0 400 128" preserveAspectRatio="none">
                           <defs>
@@ -147,14 +160,22 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
             </div>
           </section>
 
-          {/* Final Renders */}
+          {/* Design Solution */}
+          <section className="mb-24 lg:mb-32">
+            <div className="text-center max-w-3xl mx-auto">
+              <h2 className="text-4xl font-black mb-4 font-headline bg-clip-text text-transparent bg-gradient-to-b from-primary to-primary/60">Design Solution</h2>
+              <p className="mt-6 text-lg text-muted-foreground leading-relaxed whitespace-pre-line">{project.designSolution.description}</p>
+            </div>
+          </section>
+
+          {/* Final Visuals */}
           <section>
             <div className="text-center max-w-3xl mx-auto mb-16">
-              <h2 className="text-4xl font-black mb-4 font-headline bg-clip-text text-transparent bg-gradient-to-b from-primary to-primary/60">Final Renders</h2>
-              <p className="text-muted-foreground leading-relaxed">{project.final.description}</p>
+              <h2 className="text-4xl font-black mb-4 font-headline bg-clip-text text-transparent bg-gradient-to-b from-primary to-primary/60">Final Visuals</h2>
+              <p className="text-muted-foreground leading-relaxed">A gallery of the final polished renders.</p>
             </div>
             <div className="grid grid-cols-1 gap-8 md:gap-12">
-              {project.final.images.map(imageId => {
+              {project.finalVisuals.images.map(imageId => {
                 const img = PlaceHolderImages.find(p => p.id === imageId);
                 return img ? (
                   <div key={img.id} className="rounded-3xl overflow-hidden shadow-2xl shadow-black/50 border border-border/20 group relative aspect-video">
