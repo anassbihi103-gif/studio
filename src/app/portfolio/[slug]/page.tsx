@@ -110,7 +110,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                             src={image.imageUrl}
                             alt={step.title || 'Process step image'}
                             fill
-                            className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
+                            className={`object-cover w-full h-full transition-transform duration-500 group-hover:scale-105 ${image.id === 'project-1-process-3' ? 'brightness-0 invert' : ''}`}
                             data-ai-hint={image.imageHint}
                           />
                           <div className="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-3xl"></div>
