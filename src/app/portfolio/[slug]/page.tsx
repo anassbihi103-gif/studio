@@ -106,7 +106,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 
                       {image && (
                         image.id === 'project-1-process-3' ? (
-                          <div className={`relative rounded-3xl overflow-hidden shadow-2xl shadow-black/50 border border-border/20 group lg:col-start-${isEven ? 2 : 1} lg:row-start-1 bg-white p-8`}>
+                          <div className={`relative rounded-3xl overflow-hidden shadow-2xl shadow-black/50 border border-border/20 group lg:col-start-${isEven ? 2 : 1} lg:row-start-1 bg-black p-8`}>
                             <Image
                               src={image.imageUrl}
                               alt={step.title || 'Process step image'}
