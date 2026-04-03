@@ -11,7 +11,7 @@ const AboutSection = () => {
     <section id="about" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
-          <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-primary/10 aspect-[4/5] lg:sticky lg:top-24">
+          <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-primary/10 aspect-[4/5] lg:sticky lg:top-24 animate-in fade-in slide-in-from-left-8 duration-500">
             {image && (
               <Image
                 src="/anas.png"
@@ -23,14 +23,14 @@ const AboutSection = () => {
             )}
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
           </div>
-          <div>
+          <div className="animate-in fade-in slide-in-from-right-8 duration-500">
             <h2 className="text-4xl font-black mb-6 font-headline">Executive Summary</h2>
             <p className="text-muted-foreground text-lg mb-12 leading-relaxed">
             Highly accomplished 3D Visualization Specialist with a proven ability to bridge advanced technical modeling (CAD) and high-fidelity artistic production. Core expertise centers on developing optimized 3D assets and animations for real-time applications, consistently meeting stringent performance and visual requirements. Strategic collaborator skilled in translating complex engineering data and specifications into compelling, commercially viable digital solutions, demonstrating meticulous attention to detail and project efficiency.
             </p>
             
             <div className="space-y-12">
-              <div>
+              <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 delay-200">
                 <h3 className="flex items-center text-2xl font-bold mb-6 font-headline">
                   <Briefcase className="mr-3 text-primary w-6 h-6" />
                   Experience
@@ -57,7 +57,7 @@ const AboutSection = () => {
                 </div>
               </div>
 
-              <div>
+              <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 delay-300">
                 <h3 className="flex items-center text-2xl font-bold mb-6 font-headline">
                   <GraduationCap className="mr-3 text-primary w-6 h-6" />
                   Education
@@ -77,7 +77,7 @@ const AboutSection = () => {
               </div>
             </div>
 
-            <Button asChild size="lg" className="mt-12 px-8 py-7 text-base font-bold bg-primary text-primary-foreground hover:bg-primary/90 transition-all shadow-lg shadow-primary/5 rounded-xl">
+            <Button asChild size="lg" className="mt-12 px-8 py-7 text-base font-bold bg-primary text-primary-foreground hover:bg-primary/90 transition-all shadow-lg shadow-primary/5 rounded-xl animate-in fade-in zoom-in-95 duration-500 delay-400">
               <a href="#contact">
                 Let's Work Together <ArrowRight className="ml-2" />
               </a>

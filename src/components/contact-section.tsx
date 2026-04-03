@@ -54,13 +54,13 @@ const ContactSection = () => {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 animate-in fade-in slide-in-from-bottom-4 duration-500">
             <h2 className="text-5xl font-black mb-4 font-headline">LET'S COLLABORATE</h2>
             <p className="text-muted-foreground">Available for freelance projects, consultations, and full-time creative roles.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div className="space-y-8">
+            <div className="space-y-8 animate-in fade-in slide-in-from-left-8 duration-500 delay-200">
               <div>
                 <h4 className="text-primary text-xs font-bold uppercase tracking-widest mb-4">Location</h4>
                 <p className="text-lg">corso verona 74<br />Rovereto</p>
@@ -78,7 +78,7 @@ const ContactSection = () => {
               </div>
             </div>
 
-            <div className="md:col-span-2">
+            <div className="md:col-span-2 animate-in fade-in slide-in-from-right-8 duration-500 delay-200">
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <FormField

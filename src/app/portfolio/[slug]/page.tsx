@@ -36,7 +36,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
       <main className={`text-foreground overflow-hidden ${project.slug === 'easy-tear-all-in-one' ? 'bg-transparent' : 'bg-background'}`}>
         <div className="container mx-auto px-6 py-24 sm:py-32">
           
-          <div className="mb-16">
+          <div className="mb-16 animate-in fade-in duration-500">
             <Button asChild variant="outline" className="group rounded-full backdrop-blur-sm bg-background/50 hover:bg-background/80 hover:border-primary transition-all duration-300">
               <Link href="/#portfolio">
                 <ArrowLeft className="mr-2 h-4 w-4 group-hover:-translate-x-1 transition-transform" />
@@ -47,7 +47,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 
           {/* New Hero */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center mb-24 lg:mb-32">
-            <div className="lg:col-span-1 text-left relative">
+            <div className="lg:col-span-1 text-left relative animate-in fade-in slide-in-from-left-8 duration-700">
               {project.slug === 'easy-tear-all-in-one' && (
                 <div className="mb-8">
                   <Image src="/Easytear.png" alt="Easy Tear Logo" width={200} height={50} className="brightness-0 invert opacity-80" />
@@ -61,7 +61,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
               </h1>
             </div>
             {heroImage && (
-              <div className="lg:col-span-1 relative aspect-video rounded-3xl overflow-hidden shadow-2xl shadow-black/50">
+              <div className="lg:col-span-1 relative aspect-video rounded-3xl overflow-hidden shadow-2xl shadow-black/50 animate-in fade-in slide-in-from-right-8 duration-700">
                 <Image
                   src={heroImage.imageUrl}
                   alt={project.title}
@@ -75,7 +75,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           </div>
           
           {/* Problem Statement */}
-          <section className="mb-24 lg:mb-32">
+          <section className="mb-24 lg:mb-32 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">
             <div className="text-center max-w-3xl mx-auto">
               <h2 className="text-4xl font-black mb-4 font-headline bg-clip-text text-transparent bg-gradient-to-b from-primary to-primary/60">Problem Statement</h2>
               <p className="mt-6 text-lg text-muted-foreground leading-relaxed whitespace-pre-line">{project.problemStatement}</p>
@@ -84,7 +84,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 
           {/* Concept Development */}
           <section className="mb-24 lg:mb-32">
-            <div className="text-center max-w-3xl mx-auto mb-16">
+            <div className="text-center max-w-3xl mx-auto mb-16 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
               <h2 className="text-4xl font-black mb-4 font-headline bg-clip-text text-transparent bg-gradient-to-b from-primary to-primary/60">Concept Development</h2>
               <p className="text-muted-foreground leading-relaxed">A step-by-step journey from concept to creation.</p>
             </div>
@@ -96,7 +96,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 
                 return (
                   <React.Fragment key={index}>
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full max-w-7xl mx-auto px-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full max-w-7xl mx-auto px-6 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-400">
                       <div className={`lg:col-start-${isEven ? 1 : 2} lg:row-start-1 lg:text-${isEven ? 'right' : 'left'}`}>
                         <h3 className="text-2xl font-bold mb-3 text-primary drop-shadow-[0_0_8px_hsl(var(--primary)/0.6)]">
                           {step.title}
@@ -119,7 +119,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                     </div>
 
                     {index < project.conceptDevelopment.steps.length - 1 && (
-                      <div className="h-32 w-full max-w-xl hidden lg:block my-4">
+                      <div className="h-32 w-full max-w-xl hidden lg:block my-4 animate-in fade-in duration-1000 delay-500">
                         <svg width="100%" height="100%" viewBox="0 0 400 128" preserveAspectRatio="none">
                           <defs>
                             <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
@@ -161,7 +161,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           </section>
 
           {/* Design Solution */}
-          <section className="mb-24 lg:mb-32">
+          <section className="mb-24 lg:mb-32 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-500">
             <div className="text-center max-w-3xl mx-auto">
               <h2 className="text-4xl font-black mb-4 font-headline bg-clip-text text-transparent bg-gradient-to-b from-primary to-primary/60">Design Solution</h2>
               <p className="mt-6 text-lg text-muted-foreground leading-relaxed whitespace-pre-line">{project.designSolution.description}</p>
@@ -169,7 +169,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           </section>
 
           {/* Final Visuals */}
-          <section>
+          <section className="animate-in fade-in slide-in-from-bottom-4 duration-700 delay-600">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <h2 className="text-4xl font-black mb-4 font-headline bg-clip-text text-transparent bg-gradient-to-b from-primary to-primary/60">Final Visuals</h2>
               <p className="text-muted-foreground leading-relaxed">A gallery of the final polished renders.</p>
@@ -178,7 +178,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
               {project.finalVisuals.images.map(imageId => {
                 const img = PlaceHolderImages.find(p => p.id === imageId);
                 return img ? (
-                  <div key={img.id} className="rounded-3xl overflow-hidden shadow-2xl shadow-black/50 border border-border/20 group relative aspect-video">
+                  <div key={img.id} className="rounded-3xl overflow-hidden shadow-2xl shadow-black/50 border border-border/20 group relative aspect-video animate-in fade-in zoom-in-95 duration-500">
                     <Image
                       src={img.imageUrl}
                       alt="Final render"

@@ -6,7 +6,7 @@ const PortfolioSection = () => {
   return (
     <section id="portfolio" className="py-24 bg-background">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
           <div>
             <h2 className="text-4xl font-black mb-4 font-headline">SELECTED WORKS</h2>
             <div className="h-1.5 w-20 bg-primary"></div>

@@ -9,7 +9,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
   const image = PlaceHolderImages.find(p => p.id === project.imageId);
 
   return (
-    <Link href={`/portfolio/${project.slug}`} className="group block h-full">
+    <Link href={`/portfolio/${project.slug}`} className="group block h-full animate-in fade-in zoom-in-95 duration-300">
       <div className="relative overflow-hidden rounded-2xl bg-secondary border border-border transition-all hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10 h-full flex flex-col">
         <div className="aspect-[4/3] overflow-hidden">
           {image && (

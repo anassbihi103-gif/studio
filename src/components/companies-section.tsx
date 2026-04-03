@@ -14,7 +14,7 @@ const companies = [
 const CompaniesSection = () => {
   return (
     <section id="companies" className="bg-secondary/50 border-b border-border py-16 group">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 animate-in fade-in slide-in-from-bottom-4 duration-500">
             <h3 className="text-sm font-bold uppercase tracking-[0.3em] text-muted-foreground">Companies</h3>
         </div>
         <div className="relative w-full overflow-hidden">
