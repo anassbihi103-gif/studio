@@ -78,7 +78,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           <section className="mb-24 lg:mb-32 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">
             <div className="text-center max-w-3xl mx-auto">
               <h2 className="text-4xl font-black mb-4 font-headline bg-clip-text text-transparent bg-gradient-to-b from-primary to-primary/60">Problem Statement</h2>
-              <p className="mt-6 text-lg text-muted-foreground leading-relaxed whitespace-pre-line">{project.problemStatement}</p>
+              <p className="mt-6 text-lg text-foreground/80 leading-relaxed whitespace-pre-line">{project.problemStatement}</p>
             </div>
           </section>
 
@@ -86,7 +86,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           <section className="mb-24 lg:mb-32">
             <div className="text-center max-w-3xl mx-auto mb-16 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
               <h2 className="text-4xl font-black mb-4 font-headline bg-clip-text text-transparent bg-gradient-to-b from-primary to-primary/60">Concept Development</h2>
-              <p className="text-muted-foreground leading-relaxed">A step-by-step journey from concept to creation.</p>
+              <p className="text-foreground/80 leading-relaxed">A step-by-step journey from concept to creation.</p>
             </div>
 
             <div className="flex flex-col items-center">
@@ -101,7 +101,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                         <h3 className="text-2xl font-bold mb-3 text-primary drop-shadow-[0_0_8px_hsl(var(--primary)/0.6)]">
                           {step.title}
                         </h3>
-                        <p className="text-muted-foreground leading-relaxed whitespace-pre-line">{step.description}</p>
+                        <p className="text-foreground/80 leading-relaxed whitespace-pre-line">{step.description}</p>
                       </div>
 
                       {image && (
@@ -164,7 +164,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           <section className="mb-24 lg:mb-32 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-500">
             <div className="text-center max-w-3xl mx-auto">
               <h2 className="text-4xl font-black mb-4 font-headline bg-clip-text text-transparent bg-gradient-to-b from-primary to-primary/60">Design Solution</h2>
-              <p className="mt-6 text-lg text-muted-foreground leading-relaxed whitespace-pre-line">{project.designSolution.description}</p>
+              <p className="mt-6 text-lg text-foreground/80 leading-relaxed whitespace-pre-line">{project.designSolution.description}</p>
             </div>
           </section>
 
@@ -172,7 +172,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           <section className="animate-in fade-in slide-in-from-bottom-4 duration-700 delay-600">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <h2 className="text-4xl font-black mb-4 font-headline bg-clip-text text-transparent bg-gradient-to-b from-primary to-primary/60">Final Visuals</h2>
-              <p className="text-muted-foreground leading-relaxed">A gallery of the final polished renders.</p>
+              <p className="text-foreground/80 leading-relaxed">A gallery of the final polished renders.</p>
             </div>
             <div className="grid grid-cols-1 gap-8 md:gap-12">
               {project.finalVisuals.images.map(imageId => {
