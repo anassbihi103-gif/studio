@@ -36,7 +36,7 @@ export const projects: Project[] = [
       steps: [
         {
           title: "1. Research & Analysis",
-          description: "Evaluated the previous version of the gadget to identify functional errors, user pain points, and design limitations.\n\nConducted market and competitor research to define opportunities for innovation and advanced features.\n\nCollected user feedback to understand needs and expectations for the new iteration."
+          description: "Collected reference images from both the website and the physical product to ensure accuracy in proportions and details.\n\nMeasured the real-life product to obtain precise dimensions for accurate 3D modeling.\n\nAnalyzed the product's mechanism to fully understand its functionality and internal components.\n\nStudied visual and structural elements to translate them effectively into a detailed and realistic 3D model."
         },
         {
           title: "2. Design Thinking & Ideation",
