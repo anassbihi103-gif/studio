@@ -105,16 +105,30 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                       </div>
 
                       {image && (
-                        <div className={`relative aspect-video rounded-3xl overflow-hidden shadow-2xl shadow-black/50 border border-border/20 group lg:col-start-${isEven ? 2 : 1} lg:row-start-1 ${image.id === 'project-1-process-3' ? 'bg-white' : ''}`}>
-                          <Image
-                            src={image.imageUrl}
-                            alt={step.title || 'Process step image'}
-                            fill
-                            className={`${image.id === 'project-1-process-3' ? 'object-contain p-4' : 'object-cover'} w-full h-full transition-transform duration-500 group-hover:scale-105`}
-                            data-ai-hint={image.imageHint}
-                          />
-                          <div className="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-3xl"></div>
-                        </div>
+                        image.id === 'project-1-process-3' ? (
+                          <div className={`relative rounded-3xl overflow-hidden shadow-2xl shadow-black/50 border border-border/20 group lg:col-start-${isEven ? 2 : 1} lg:row-start-1 bg-white p-8`}>
+                            <Image
+                              src={image.imageUrl}
+                              alt={step.title || 'Process step image'}
+                              width={1200}
+                              height={1200}
+                              className="object-contain w-full h-auto transition-transform duration-500 group-hover:scale-105"
+                              data-ai-hint={image.imageHint}
+                            />
+                             <div className="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-3xl"></div>
+                          </div>
+                        ) : (
+                          <div className={`relative aspect-video rounded-3xl overflow-hidden shadow-2xl shadow-black/50 border border-border/20 group lg:col-start-${isEven ? 2 : 1} lg:row-start-1`}>
+                            <Image
+                              src={image.imageUrl}
+                              alt={step.title || 'Process step image'}
+                              fill
+                              className={'object-cover w-full h-full transition-transform duration-500 group-hover:scale-105'}
+                              data-ai-hint={image.imageHint}
+                            />
+                            <div className="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-3xl"></div>
+                          </div>
+                        )
                       )}
                     </div>
 
