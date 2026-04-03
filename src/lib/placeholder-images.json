@@ -56,9 +56,9 @@
     },
     {
       "id": "project-1-process-3",
-      "description": "Dashboard showing user analytics",
-      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbmFseXRpY3MlMjBkYXNoYm9hcmR8ZW58MHx8fHwxNzczMzgzMTAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "analytics dashboard"
+      "description": "Reference images for Easy Tear research & analysis",
+      "imageUrl": "/easy.png",
+      "imageHint": "reference images"
     },
     {
       "id": "project-1-process-4",
@@ -273,7 +273,7 @@
     {
       "id": "project-7-process-7",
       "description": "Designer reviewing product design on a tablet",
-      "imageUrl": "https://images.unsplash.com/photo-1587440871875-191322ee64b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaW5hbCUyMGRlc2lnbnxlbnwwfHx8fDE3NzE4MDIwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1587440871875-191322ee64b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHhmaW5hbCUyMGRlc2lnbnxlbnwwfHx8fDE3NzE4MDIwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "final design"
     },
     {
