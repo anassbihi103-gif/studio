@@ -24,7 +24,7 @@ const HeroSection = () => {
         <p className="text-primary font-code tracking-[0.3em] mb-4 uppercase text-sm animate-in fade-in slide-in-from-top-4 duration-500">
           Higher Technician in Digital Manufacturing Design & 3D artist
         </p>
-        <h1 className="text-6xl md:text-7xl font-black mb-6 tracking-tight leading-tight bg-clip-text text-transparent bg-gradient-to-r from-primary via-foreground to-primary bg-[length:200%_auto] animate-gradient font-headline drop-shadow-[0_0_8px_hsl(var(--primary)/0.4)] animate-in fade-in zoom-in-95 duration-500 delay-100">
+        <h1 className="text-6xl md:text-7xl font-black mb-6 tracking-tight leading-tight bg-clip-text text-transparent bg-gradient-to-r from-primary via-foreground to-primary bg-[length:200%_auto] font-headline drop-shadow-[0_0_8px_hsl(var(--primary)/0.4)]">
           bringing your vision to life with precision and flair
         </h1>
         <p className="max-w-xl mx-auto text-muted-foreground text-lg mb-10 animate-in fade-in slide-in-from-bottom-4 duration-500 delay-200">
