@@ -227,6 +227,66 @@
       "description": "Product detail closeup",
       "imageUrl": "https://images.unsplash.com/photo-1699465043848-bb235ffb64f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcm9kdWN0JTIwY2xvc2V1cHxlbnwwfHx8fDE3NzE4MDEwNzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "product closeup"
+    },
+    {
+      "id": "project-7",
+      "description": "A modern dog feeding station",
+      "imageUrl": "https://images.unsplash.com/photo-1583511655826-05700d52f4d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkb2clMjBzdGF0aW9ufGVufDB8fHx8MTc3MTgwMjAwMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dog station"
+    },
+    {
+      "id": "project-7-process-1",
+      "description": "Person sketching on a notebook",
+      "imageUrl": "https://images.unsplash.com/photo-1554224155-1696413565d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZXNlYXJjaCUyMHNrZXRjaGVzfGVufDB8fHx8MTc3MTgwMjAwMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "research sketches"
+    },
+    {
+      "id": "project-7-process-2",
+      "description": "Product design sketches on paper",
+      "imageUrl": "https://images.unsplash.com/photo-1520609355482-72a3b0a6ea38?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcmlvZHVjdCUyMGRlc2lnbiUyMHNrZXRjaGVzfGVufDB8fHx8MTc3MTgwMjAwMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "design sketches"
+    },
+    {
+      "id": "project-7-process-3",
+      "description": "3D model on computer screen",
+      "imageUrl": "https://images.unsplash.com/photo-1617897902542-f155948b881b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHwzZCUyMG1vZGVsaW5nJTIwc29mdHdhcmV8ZW58MHx8fHwxNzcxODAyMDAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "3d modeling"
+    },
+    {
+      "id": "project-7-process-4",
+      "description": "Wood texture close up",
+      "imageUrl": "https://images.unsplash.com/photo-1618062094395-573229878c77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b29kJTIwdGV4dHVyZXxlbnwwfHx8fDE3NzE4MDIwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "wood texture"
+    },
+    {
+      "id": "project-7-process-5",
+      "description": "3D printer in action",
+      "imageUrl": "https://images.unsplash.com/photo-1600000856985-d49b8c0e6f76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHwzZCUyMHByaW50ZXJ8ZW58MHx8fHwxNzcxODAyMDAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "3d printer"
+    },
+    {
+      "id": "project-7-process-6",
+      "description": "Dog looking at a product render on a laptop",
+      "imageUrl": "https://images.unsplash.com/photo-1544568100-847a948585b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkb2clMjBsYXB0b3B8ZW58MHx8fHwxNzcxODAyMDAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dog laptop"
+    },
+    {
+      "id": "project-7-process-7",
+      "description": "Designer reviewing product design on a tablet",
+      "imageUrl": "https://images.unsplash.com/photo-1587440871875-191322ee64b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaW5hbCUyMGRlc2lnbnxlbnwwfHx8fDE3NzE4MDIwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "final design"
+    },
+    {
+      "id": "project-7-final-1",
+      "description": "A happy dog eating from a modern bowl",
+      "imageUrl": "https://images.unsplash.com/photo-1560807707-8cc77767d783?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoYXBweSUyMGRvZ3xlbnwwfHx8fDE3NzE4MDIwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "happy dog"
+    },
+    {
+      "id": "project-7-final-2",
+      "description": "Stylish dog accessories in a home setting",
+      "imageUrl": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkb2clMjBhY2Nlc3Nvcmllc3xlbnwwfHx8fDE3NzE4MDIwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dog accessories"
     }
   ]
 }

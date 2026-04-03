@@ -311,5 +311,61 @@ export const projects: Project[] = [
     finalVisuals: {
       images: ["project-6-final-1", "project-6-final-2", "project-1-final-1", "project-1-final-2"]
     }
+  },
+  {
+    id: 7,
+    slug: "dog-station",
+    title: "Dog Station",
+    category: "Product Design & Visualization",
+    imageId: "project-7",
+    description: "A modular and stylish station for dog care, including feeding and grooming.",
+    problemStatement: "Dog owners often struggle with scattered feeding bowls, grooming tools, and food bags. This project aimed to design an all-in-one 'Dog Station' that is both functional for the pet and aesthetically pleasing for the home.",
+    conceptDevelopment: {
+      steps: [
+        {
+          title: "1. User Research",
+          description: "Surveyed dog owners to understand their daily routines, pain points, and desires for a pet care station."
+        },
+        {
+          title: "2. Ideation Sketching",
+          description: "Sketched multiple concepts focusing on modularity, material use, and ease of cleaning."
+        },
+        {
+          title: "3. 3D Modeling",
+          description: "Developed detailed 3D models in SolidWorks, refining the chosen concept and ensuring structural integrity."
+        },
+        {
+          title: "4. Material & Texture",
+          description: "Used Substance Painter to create realistic wood and metal textures for photorealistic rendering."
+        },
+        {
+          title: "5. Prototyping",
+          description: "3D printed a scaled model to test the proportions and functionality of the modular components."
+        },
+        {
+          title: "6. Rendered Visuals",
+          description: "Created a series of studio and lifestyle renders in Blender to showcase the final product."
+        },
+        {
+          title: "7. Final Polish",
+          description: "Finalized the design based on feedback and prepared assets for marketing materials."
+        }
+      ],
+      images: [
+        "project-7-process-1",
+        "project-7-process-2",
+        "project-7-process-3",
+        "project-7-process-4",
+        "project-7-process-5",
+        "project-7-process-6",
+        "project-7-process-7"
+      ]
+    },
+    designSolution: {
+      description: "The final design is a modular system with integrated food and water bowls, storage for food and toys, and a grooming attachment. The use of natural wood and matte black metal fits seamlessly into modern home interiors. The renders highlighted its functionality and stylish design."
+    },
+    finalVisuals: {
+      images: ["project-7-final-1", "project-7-final-2"]
+    }
   }
 ];
