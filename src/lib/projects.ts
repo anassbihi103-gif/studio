@@ -1,3 +1,4 @@
+
 export type ConceptStep = {
   title: string;
   description: string;
@@ -39,31 +40,27 @@ export const projects: Project[] = [
           description: "Collected reference images from both the website and the physical product to ensure accuracy in proportions and details.\n\nMeasured the real-life product to obtain precise dimensions for accurate 3D modeling.\n\nAnalyzed the product's mechanism to fully understand its functionality and internal components.\n\nStudied visual and structural elements to translate them effectively into a detailed and realistic 3D model."
         },
         {
-          title: "2. Design Thinking & Ideation",
-          description: "Applied design thinking methodology to generate multiple concepts for an upgraded version.\n\nFocused on combining enhanced functionality, futuristic aesthetics, and ergonomic usability.\n\nCreated initial sketches, concept boards, and feature lists for evaluation."
-        },
-        {
-          title: "3. Concept Development",
+          title: "2. Concept Development",
           description: "Selected the most promising design concept and refined it with detailed technical sketches and CAD models.\n\nIntegrated new advanced features, optimized component placement, and ensured feasibility for production."
         },
         {
-          title: "4. 3D Modeling & Prototype Design",
+          title: "3. 3D Modeling & Prototype Design",
           description: "Developed a full 3D model of the gadget using CAD software, incorporating precise dimensions and mechanical details.\n\nProduced a physical or virtual prototype to test form, ergonomics, and functionality."
         },
         {
-          title: "5. Visual Communication & Marketing Assets",
+          title: "4. Visual Communication & Marketing Assets",
           description: "Created photorealistic renders highlighting the new design, features, and futuristic look.\n\nDeveloped artistic animations to showcase product interaction, use cases, and advanced functionality.\n\nTailored visual content for social media, marketing campaigns, and portfolio presentation."
         },
         {
-          title: "6. Testing & Iteration",
+          title: "5. Testing & Iteration",
           description: "Evaluated the prototype for usability, durability, and overall performance.\n\nImplemented refinements based on testing feedback to ensure a polished final product."
         },
         {
-          title: "7. Final Deliverables",
+          title: "6. Final Deliverables",
           description: "Complete CAD files and detailed prototype.\n\nHigh-quality photorealistic renders and dynamic animations for marketing.\n\nDocumentation of design process, iterations, and design rationale."
         }
       ],
-      images: ["project-1-process-3", "project-1-process-1", "project-4-process-1", "project-1-process-2", "process-extra-2", "project-1-process-4", "project-1-process-5"]
+      images: ["project-1-process-3", "project-4-process-1", "project-1-process-2", "process-extra-2", "project-1-process-4", "project-1-process-5"]
     },
     designSolution: {
       description: "The final output included a series of high-resolution studio renders showcasing the product from multiple angles, along with lifestyle images demonstrating its use-case. An animated 360-degree turntable video was also produced to provide a dynamic view. All assets were optimized for both web and print."
@@ -369,3 +366,5 @@ export const projects: Project[] = [
     }
   }
 ];
+
+    
