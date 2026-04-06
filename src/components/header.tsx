@@ -1,8 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import { Menu, X, ArrowRight } from 'lucide-react';
-import { Button } from './ui/button';
+import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
 
 const navItems = ['About', 'Portfolio', 'Contact'];
@@ -11,9 +10,9 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="absolute w-full z-50 py-6">
-      <div className="container mx-auto px-6 flex justify-between items-center">
-        <Link href="/" className="text-xl font-bold tracking-tighter font-headline">
+    <header className="fixed top-0 left-0 right-0 w-full z-50 bg-background/80 backdrop-blur-lg border-b border-white/10">
+      <div className="container mx-auto px-6 h-20 flex justify-between items-center">
+        <Link href="/" className="text-xl font-bold tracking-tight">
           ANAS SBIHI
         </Link>
 
@@ -30,13 +29,6 @@ const Header = () => {
           ))}
         </nav>
 
-        <Button asChild className="hidden md:flex font-bold transition-all group bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-5 py-2">
-          <a href="#contact">
-            Get in touch
-            <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
-          </a>
-        </Button>
-
         {/* Mobile Menu Button */}
         <button className="md:hidden text-foreground z-50" onClick={() => setIsMenuOpen(!isMenuOpen)}>
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -45,7 +37,7 @@ const Header = () => {
 
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
-        <div className="md:hidden fixed inset-0 bg-background pt-24 p-6 flex flex-col items-center space-y-6 animate-in fade-in-20">
+        <div className="md:hidden absolute top-full left-0 w-full bg-background p-6 flex flex-col items-center space-y-6 animate-in fade-in-20 border-t border-border">
           {navItems.map((item) => (
             <a 
               key={item} 
@@ -56,11 +48,6 @@ const Header = () => {
               {item}
             </a>
           ))}
-          <Button asChild size="lg" className="font-bold transition-all group bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6 py-3 text-lg">
-            <a href="#contact" onClick={() => setIsMenuOpen(false)}>
-              Get in touch
-            </a>
-          </Button>
         </div>
       )}
     </header>
