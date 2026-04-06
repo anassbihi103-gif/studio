@@ -13,33 +13,31 @@ const companies = [
 
 const CompaniesSection = () => {
   return (
-    <section id="companies" className="bg-secondary/50 border-b border-border py-16 group">
-        <div className="text-center mb-12 animate-in fade-in slide-in-from-bottom-4 duration-500">
-            <h3 className="text-sm font-bold uppercase tracking-[0.3em] text-muted-foreground">Companies</h3>
+    <section id="companies" className="py-20 bg-secondary/30">
+      <div className="container mx-auto px-6 text-center">
+        <h3 className="text-sm font-semibold tracking-wide text-muted-foreground mb-8">
+          Trusted by Brands I’ve Helped Shape
+        </h3>
+        <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-6">
+          {companies.map((company, index) => {
+            return (
+              <div 
+                  key={index} 
+                  className="transition-all duration-300 brightness-0 invert opacity-60 hover:opacity-100" 
+                  title={company.name}
+              >
+                  <Image 
+                      src={company.logo} 
+                      alt={`${company.name} logo`}
+                      width={120}
+                      height={40}
+                      className="object-contain h-10"
+                  />
+              </div>
+            );
+          })}
         </div>
-        <div className="relative w-full overflow-hidden">
-            <div className="flex w-max animate-marquee group-hover:pause">
-                {[...companies, ...companies].map((company, index) => {
-                  const isSmaller = ['Easytear', 'Double S', 'cappa pulita'].includes(company.name);
-                  const isGlowy = company.name === 'ottica passuello';
-                  return (
-                    <div 
-                        key={index} 
-                        className={`flex-shrink-0 w-64 h-20 flex justify-center items-center transition-all duration-300 ${isGlowy ? 'drop-shadow-[0_0_8px_hsl(var(--primary)/0.6)]' : 'grayscale opacity-60 hover:grayscale-0 hover:opacity-100'}`} 
-                        title={company.name}
-                    >
-                        <Image 
-                            src={company.logo} 
-                            alt={`${company.name} logo`}
-                            width={isSmaller ? 80 : 140}
-                            height={isSmaller ? 15 : 50}
-                            className="object-contain"
-                        />
-                    </div>
-                  );
-                })}
-            </div>
-        </div>
+      </div>
     </section>
   );
 };

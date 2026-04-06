@@ -1,8 +1,6 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
-import logo from '../../public/PRIMO.png';
 
 const Footer = () => {
   const [year, setYear] = useState<number | string>('...');
@@ -12,24 +10,14 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="py-12 border-t border-border bg-background text-muted-foreground">
-      <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-        <div className="flex items-center space-x-2 opacity-50">
-          <Image 
-            src={logo} 
-            alt="ANAS SBIHI Logo" 
-            width={24} 
-            height={24} 
-            className="rounded-lg shadow-lg shadow-primary/20 brightness-0 invert" 
-          />
-          <span className="text-sm font-bold tracking-tighter uppercase font-headline">ANAS SBIHI Portfolio</span>
-        </div>
-        <p className="text-xs font-medium uppercase tracking-[0.2em] text-center">
-          © {year} Designed & Built for the Next Dimension
+    <footer className="py-8 border-t border-border bg-background text-muted-foreground">
+      <div className="container mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p className="text-sm font-medium text-center">
+          &copy; {year} ANAS SBIHI. All Rights Reserved.
         </p>
-        <div className="flex space-x-6 text-xs font-bold uppercase tracking-widest">
-          <a href="#" className="hover:text-foreground transition-colors">Privacy</a>
-          <a href="#" className="hover:text-foreground transition-colors">Terms</a>
+        <div className="flex space-x-6 text-sm font-medium">
+          <a href="#" className="hover:text-foreground transition-colors">Privacy Policy</a>
+          <a href="#" className="hover:text-foreground transition-colors">Terms of Service</a>
         </div>
       </div>
     </footer>

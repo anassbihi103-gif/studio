@@ -36,27 +36,27 @@ export const projects: Project[] = [
     conceptDevelopment: {
       steps: [
         {
-          title: "1. Research & Analysis",
+          title: "Research & Analysis",
           description: "Collected reference images from both the website and the physical product to ensure accuracy in proportions and details.\n\nMeasured the real-life product to obtain precise dimensions for accurate 3D modeling.\n\nAnalyzed the product's mechanism to fully understand its functionality and internal components.\n\nStudied visual and structural elements to translate them effectively into a detailed and realistic 3D model."
         },
         {
-          title: "2. Concept Development",
+          title: "Concept Development",
           description: "Selected the most promising design concept and refined it with detailed technical sketches and CAD models.\n\nIntegrated new advanced features, optimized component placement, and ensured feasibility for production."
         },
         {
-          title: "3. 3D Modeling & Prototype Design",
+          title: "3D Modeling & Prototype Design",
           description: "Developed a full 3D model of the gadget using CAD software, incorporating precise dimensions and mechanical details.\n\nProduced a physical or virtual prototype to test form, ergonomics, and functionality."
         },
         {
-          title: "4. Visual Communication & Marketing Assets",
+          title: "Visual Communication & Marketing Assets",
           description: "Created photorealistic renders highlighting the new design, features, and futuristic look.\n\nDeveloped artistic animations to showcase product interaction, use cases, and advanced functionality.\n\nTailored visual content for social media, marketing campaigns, and portfolio presentation."
         },
         {
-          title: "5. Testing & Iteration",
+          title: "Testing & Iteration",
           description: "Evaluated the prototype for usability, durability, and overall performance.\n\nImplemented refinements based on testing feedback to ensure a polished final product."
         },
         {
-          title: "6. Final Deliverables",
+          title: "Final Deliverables",
           description: "Complete CAD files and detailed prototype.\n\nHigh-quality photorealistic renders and dynamic animations for marketing.\n\nDocumentation of design process, iterations, and design rationale."
         }
       ],
@@ -80,31 +80,27 @@ export const projects: Project[] = [
     conceptDevelopment: {
       steps: [
         {
-          title: "1. Research & Analysis",
+          title: "Research & Analysis",
           description: "We started by importing the client's CAD models of the robots into Blender. A significant amount of work went into retopology and optimization for animation. We then rigged the models for realistic movement and created a futuristic factory setting. The animation was storyboarded and previz'd before final rendering."
         },
         {
-          title: "2. Design Thinking & Ideation",
+          title: "Concept Development",
           description: "This is a placeholder description. You can replace it with your own content."
         },
         {
-          title: "3. Concept Development",
+          title: "3D Modeling & Prototype Design",
           description: "This is a placeholder description. You can replace it with your own content."
         },
         {
-          title: "4. 3D Modeling & Prototype Design",
+          title: "Visual Communication & Marketing Assets",
           description: "This is a placeholder description. You can replace it with your own content."
         },
         {
-          title: "5. Visual Communication & Marketing Assets",
+          title: "Testing & Iteration",
           description: "This is a placeholder description. You can replace it with your own content."
         },
         {
-          title: "6. Testing & Iteration",
-          description: "This is a placeholder description. You can replace it with your own content."
-        },
-        {
-          title: "7. Final Deliverables",
+          title: "Final Deliverables",
           description: "This is a placeholder description. You can replace it with your own content."
         }
       ],
@@ -128,31 +124,27 @@ export const projects: Project[] = [
     conceptDevelopment: {
       steps: [
         {
-          title: "1. Research & Analysis",
+          title: "Research & Analysis",
           description: "The workflow involved modeling dozens of unique metal products based on engineering drawings. We developed a master Blender scene with a lighting setup that would provide consistent, clean results across all products. A custom material library was built in Substance Painter to represent various metal finishes like brushed steel, chrome, and anodized aluminum."
         },
         {
-          title: "2. Design Thinking & Ideation",
+          title: "Concept Development",
           description: "This is a placeholder description. You can replace it with your own content."
         },
         {
-          title: "3. Concept Development",
+          title: "3D Modeling & Prototype Design",
           description: "This is a placeholder description. You can replace it with your own content."
         },
         {
-          title: "4. 3D Modeling & Prototype Design",
+          title: "Visual Communication & Marketing Assets",
           description: "This is a placeholder description. You can replace it with your own content."
         },
         {
-          title: "5. Visual Communication & Marketing Assets",
+          title: "Testing & Iteration",
           description: "This is a placeholder description. You can replace it with your own content."
         },
         {
-          title: "6. Testing & Iteration",
-          description: "This is a placeholder description. You can replace it with your own content."
-        },
-        {
-          title: "7. Final Deliverables",
+          title: "Final Deliverables",
           description: "This is a placeholder description. You can replace it with your own content."
         }
       ],
@@ -176,31 +168,27 @@ export const projects: Project[] = [
     conceptDevelopment: {
       steps: [
         {
-          title: "1. Research & Analysis",
+          title: "Research & Analysis",
           description: "The entire kitchen was designed and modeled from scratch. This included custom cabinetry, integrated smart appliances, and holographic displays. We paid special attention to lighting and materials to create a warm, inviting, yet technologically advanced atmosphere. The scene was rendered in Blender using Cycles for maximum realism."
         },
         {
-          title: "2. Design Thinking & Ideation",
+          title: "Concept Development",
           description: "This is a placeholder description. You can replace it with your own content."
         },
         {
-          title: "3. Concept Development",
+          title: "3D Modeling & Prototype Design",
           description: "This is a placeholder description. You can replace it with your own content."
         },
         {
-          title: "4. 3D Modeling & Prototype Design",
+          title: "Visual Communication & Marketing Assets",
           description: "This is a placeholder description. You can replace it with your own content."
         },
         {
-          title: "5. Visual Communication & Marketing Assets",
+          title: "Testing & Iteration",
           description: "This is a placeholder description. You can replace it with your own content."
         },
         {
-          title: "6. Testing & Iteration",
-          description: "This is a placeholder description. You can replace it with your own content."
-        },
-        {
-          title: "7. Final Deliverables",
+          title: "Final Deliverables",
           description: "This is a placeholder description. You can replace it with your own content."
         }
       ],
@@ -224,31 +212,27 @@ export const projects: Project[] = [
     conceptDevelopment: {
       steps: [
         {
-          title: "1. Research & Analysis",
+          title: "Research & Analysis",
           description: "We went through several design iterations, starting with rough sketches and moving to 3D blockouts to test different layouts and configurations. The final design was modeled in detail, including product displays, lighting fixtures, and branding elements. We created a set of assembly instruction visuals based on the 3D model."
         },
         {
-          title: "2. Design Thinking & Ideation",
+          title: "Concept Development",
           description: "This is a placeholder description. You can replace it with your own content."
         },
         {
-          title: "3. Concept Development",
+          title: "3D Modeling & Prototype Design",
           description: "This is a placeholder description. You can replace it with your own content."
         },
         {
-          title: "4. 3D Modeling & Prototype Design",
+          title: "Visual Communication & Marketing Assets",
           description: "This is a placeholder description. You can replace it with your own content."
         },
         {
-          title: "5. Visual Communication & Marketing Assets",
+          title: "Testing & Iteration",
           description: "This is a placeholder description. You can replace it with your own content."
         },
         {
-          title: "6. Testing & Iteration",
-          description: "This is a placeholder description. You can replace it with your own content."
-        },
-        {
-          title: "7. Final Deliverables",
+          title: "Final Deliverables",
           description: "This is a placeholder description. You can replace it with your own content."
         }
       ],
@@ -272,31 +256,27 @@ export const projects: Project[] = [
     conceptDevelopment: {
       steps: [
         {
-          title: "1. Research & Analysis",
+          title: "Research & Analysis",
           description: "Working from the architect's base plans, we developed the full interior concept. This included selecting materials, designing custom furniture, and creating a lighting scheme. We built a detailed 3D model of the entire space and produced a series of test renders to refine the look and feel in collaboration with the client."
         },
         {
-          title: "2. Design Thinking & Ideation",
+          title: "Concept Development",
           description: "This is a placeholder description. You can replace it with your own content."
         },
         {
-          title: "3. Concept Development",
+          title: "3D Modeling & Prototype Design",
           description: "This is a placeholder description. You can replace it with your own content."
         },
         {
-          title: "4. 3D Modeling & Prototype Design",
+          title: "Visual Communication & Marketing Assets",
           description: "This is a placeholder description. You can replace it with your own content."
         },
         {
-          title: "5. Visual Communication & Marketing Assets",
+          title: "Testing & Iteration",
           description: "This is a placeholder description. You can replace it with your own content."
         },
         {
-          title: "6. Testing & Iteration",
-          description: "This is a placeholder description. You can replace it with your own content."
-        },
-        {
-          title: "7. Final Deliverables",
+          title: "Final Deliverables",
           description: "This is a placeholder description. You can replace it with your own content."
         }
       ],
@@ -320,31 +300,31 @@ export const projects: Project[] = [
     conceptDevelopment: {
       steps: [
         {
-          title: "1. User Research",
+          title: "User Research",
           description: "Surveyed dog owners to understand their daily routines, pain points, and desires for a pet care station."
         },
         {
-          title: "2. Ideation Sketching",
+          title: "Ideation Sketching",
           description: "Sketched multiple concepts focusing on modularity, material use, and ease of cleaning."
         },
         {
-          title: "3. 3D Modeling",
+          title: "3D Modeling",
           description: "Developed detailed 3D models in SolidWorks, refining the chosen concept and ensuring structural integrity."
         },
         {
-          title: "4. Material & Texture",
+          title: "Material & Texture",
           description: "Used Substance Painter to create realistic wood and metal textures for photorealistic rendering."
         },
         {
-          title: "5. Prototyping",
+          title: "Prototyping",
           description: "3D printed a scaled model to test the proportions and functionality of the modular components."
         },
         {
-          title: "6. Rendered Visuals",
+          title: "Rendered Visuals",
           description: "Created a series of studio and lifestyle renders in Blender to showcase the final product."
         },
         {
-          title: "7. Final Polish",
+          title: "Final Polish",
           description: "Finalized the design based on feedback and prepared assets for marketing materials."
         }
       ],

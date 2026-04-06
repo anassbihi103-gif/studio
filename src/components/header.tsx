@@ -1,37 +1,21 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
-import { Menu, X } from 'lucide-react';
+import React, { useState } from 'react';
+import { Menu, X, ArrowRight } from 'lucide-react';
 import { Button } from './ui/button';
+import Link from 'next/link';
 
-const navItems = ['Portfolio', 'About', 'Skills', 'Contact'];
+const navItems = ['About', 'Portfolio', 'Contact'];
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   return (
-    <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-background/80 backdrop-blur-md py-3 shadow-xl' : 'bg-transparent py-6'}`}>
+    <header className="absolute w-full z-50 py-6">
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <a href="#home" className="flex items-center space-x-3">
-          <Image 
-            src="/PRIMO.png" 
-            alt="ANAS SBIHI Logo" 
-            width={50} 
-            height={50} 
-            className="rounded-lg shadow-lg shadow-primary/20 brightness-0 invert" 
-          />
-          <span className="text-2xl font-bold tracking-tighter font-headline">ANAS SBIHI</span>
-        </a>
+        <Link href="/" className="text-xl font-bold tracking-tighter font-headline">
+          ANAS SBIHI
+        </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-8 items-center">
@@ -39,35 +23,44 @@ const Header = () => {
             <a 
               key={item} 
               href={`#${item.toLowerCase()}`} 
-              className="text-sm uppercase tracking-widest font-medium text-muted-foreground hover:text-primary transition-colors"
+              className="text-base font-medium text-muted-foreground hover:text-primary transition-colors"
             >
               {item}
             </a>
           ))}
-          <Button asChild className="font-bold transition-all transform hover:scale-105 active:scale-95 rounded-full px-5 py-2 text-sm bg-primary text-primary-foreground hover:bg-primary/90">
-            <a href="#contact">Hire Me</a>
-          </Button>
         </nav>
 
+        <Button asChild className="hidden md:flex font-bold transition-all group bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-5 py-2">
+          <a href="#contact">
+            Get in touch
+            <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+          </a>
+        </Button>
+
         {/* Mobile Menu Button */}
-        <button className="md:hidden text-foreground" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <button className="md:hidden text-foreground z-50" onClick={() => setIsMenuOpen(!isMenuOpen)}>
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-secondary border-b border-border p-6 flex flex-col space-y-4 shadow-2xl animate-in fade-in-20 slide-in-from-top-4">
+        <div className="md:hidden fixed inset-0 bg-background pt-24 p-6 flex flex-col items-center space-y-6 animate-in fade-in-20">
           {navItems.map((item) => (
             <a 
               key={item} 
               href={`#${item.toLowerCase()}`} 
               onClick={() => setIsMenuOpen(false)}
-              className="text-lg font-medium text-foreground hover:text-primary transition-colors"
+              className="text-2xl font-medium text-foreground hover:text-primary transition-colors"
             >
               {item}
             </a>
           ))}
+          <Button asChild size="lg" className="font-bold transition-all group bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6 py-3 text-lg">
+            <a href="#contact" onClick={() => setIsMenuOpen(false)}>
+              Get in touch
+            </a>
+          </Button>
         </div>
       )}
     </header>

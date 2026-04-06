@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { Twitter, Github, Linkedin, Mail } from 'lucide-react';
+import { Twitter, Github, Linkedin, Mail, ArrowRight } from 'lucide-react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
@@ -49,85 +49,72 @@ const ContactSection = () => {
   }
 
   return (
-    <section id="contact" className="py-24 bg-background overflow-hidden relative">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[1px] bg-gradient-to-r from-transparent via-border to-transparent"></div>
-      
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16 animate-in fade-in slide-in-from-bottom-4 duration-500">
-            <h2 className="text-5xl font-black mb-4 font-headline">LET'S COLLABORATE</h2>
-            <p className="text-muted-foreground">Available for freelance projects, consultations, and full-time creative roles.</p>
-          </div>
+    <section id="contact" className="py-24 sm:py-32 bg-secondary/30">
+      <div className="container mx-auto px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-4 font-headline">Let's Get in Touch</h2>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-12">
+            Have a project in mind, a question, or just want to say hi? I’d love to hear from you.
+          </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div className="space-y-8 animate-in fade-in slide-in-from-left-8 duration-500 delay-200">
-              <div>
-                <h4 className="text-primary text-xs font-bold uppercase tracking-widest mb-4">Location</h4>
-                <p className="text-lg">corso verona 74<br />Rovereto</p>
+          <Form {...form}>
+            <form onSubmit={form.handleSubmit(onSubmit)} className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-left">
+              <FormField
+                control={form.control}
+                name="fullName"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormControl>
+                      <Input placeholder="Full Name" {...field} className="bg-background border-border rounded-lg px-4 py-3 h-12 text-base" />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="email"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormControl>
+                      <Input type="email" placeholder="Email Address" {...field} className="bg-background border-border rounded-lg px-4 py-3 h-12 text-base" />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="message"
+                render={({ field }) => (
+                  <FormItem className="sm:col-span-2">
+                    <FormControl>
+                      <Textarea placeholder="Tell me about your project..." {...field} className="bg-background border-border rounded-lg px-4 py-3 h-32 text-base" />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <div className="sm:col-span-2 text-center">
+                <Button type="submit" disabled={isSubmitting} size="lg" className="bg-primary text-primary-foreground rounded-full font-bold hover:bg-primary/90 transition-all text-base h-12 px-8">
+                  <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Button>
               </div>
-              <div>
-                <h4 className="text-primary text-xs font-bold uppercase tracking-widest mb-4">Direct Contact</h4>
-                <p className="text-lg">anassbihi103@gmail.com<br />+39 3472897012</p>
-              </div>
-              <div className="flex space-x-4">
-                {[Twitter, Github, Linkedin].map((Icon, idx) => (
-                  <a key={idx} href="#" className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all border border-border">
-                    <Icon className="w-5 h-5" />
-                  </a>
-                ))}
-              </div>
-            </div>
+            </form>
+          </Form>
 
-            <div className="md:col-span-2 animate-in fade-in slide-in-from-right-8 duration-500 delay-200">
-              <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <FormField
-                    control={form.control}
-                    name="fullName"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="text-xs font-bold uppercase text-muted-foreground">Full Name</FormLabel>
-                        <FormControl>
-                          <Input placeholder="John Doe" {...field} className="bg-secondary border-border rounded-xl px-4 py-3 h-auto focus:border-primary" />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  <FormField
-                    control={form.control}
-                    name="email"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="text-xs font-bold uppercase text-muted-foreground">Email Address</FormLabel>
-                        <FormControl>
-                          <Input type="email" placeholder="john@company.com" {...field} className="bg-secondary border-border rounded-xl px-4 py-3 h-auto focus:border-primary" />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  <FormField
-                    control={form.control}
-                    name="message"
-                    render={({ field }) => (
-                      <FormItem className="sm:col-span-2">
-                        <FormLabel className="text-xs font-bold uppercase text-muted-foreground">Message</FormLabel>
-                        <FormControl>
-                          <Textarea placeholder="Tell me about your project..." {...field} className="bg-secondary border-border rounded-xl px-4 py-3 h-32 focus:border-primary" />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  <Button type="submit" disabled={isSubmitting} className="sm:col-span-2 bg-primary text-primary-foreground py-4 h-auto rounded-xl font-black hover:bg-primary/90 transition-all flex items-center justify-center space-x-2 text-base">
-                    <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
-                    <Mail className="w-5 h-5" />
-                  </Button>
-                </form>
-              </Form>
+          <div className="mt-16">
+            <p className="text-muted-foreground mb-4">Or find me on</p>
+            <div className="flex justify-center space-x-4">
+              {[Twitter, Github, Linkedin].map((Icon, idx) => (
+                <a key={idx} href="#" className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all border border-border">
+                  <Icon className="w-5 h-5" />
+                </a>
+              ))}
             </div>
           </div>
+
         </div>
       </div>
     </section>

@@ -4,9 +4,6 @@ import ContactSection from '@/components/contact-section';
 import Footer from '@/components/footer';
 import Header from '@/components/header';
 import HeroSection from '@/components/hero-section';
-import PortfolioSection from '@/components/portfolio-section';
-import SkillsSection from '@/components/skills-section';
-import StatsSection from '@/components/stats-section';
 
 export default function Home() {
   return (
@@ -14,11 +11,8 @@ export default function Home() {
       <Header />
       <main className="bg-background">
         <HeroSection />
-        <AboutSection />
         <CompaniesSection />
-        <PortfolioSection />
-        <StatsSection />
-        <SkillsSection />
+        <AboutSection />
         <ContactSection />
       </main>
       <Footer />
