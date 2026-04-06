@@ -1,4 +1,3 @@
-
 import { projects } from '@/lib/projects';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
@@ -41,27 +40,30 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
             <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tighter font-headline">
               {project.title}
             </h1>
-            <p className="mt-6 text-lg text-foreground/70 leading-relaxed whitespace-pre-line max-w-3xl mx-auto">{project.problemStatement}</p>
+            <p className="mt-6 text-lg text-foreground/80 leading-relaxed whitespace-pre-line max-w-3xl mx-auto">{project.problemStatement}</p>
           </div>
           
           <section className="mb-24 lg:mb-32">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <h2 className="text-4xl font-bold mb-4 font-headline">Concept Development</h2>
-              <p className="text-foreground/70 leading-relaxed">A step-by-step journey from concept to creation.</p>
+              <p className="text-foreground/80 leading-relaxed">A step-by-step journey from concept to creation.</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {project.conceptDevelopment.steps.slice(0, 6).map((step, index) => {
+              {project.conceptDevelopment.steps.map((step, index) => {
                 const image = PlaceHolderImages.find(p => p.id === project.conceptDevelopment.images[index]);
+                const isSpecialImage = image?.imageUrl === '/refeasy.png';
                 return (
                   <div key={index} className="flex flex-col gap-4">
                     {image && (
-                      <div className="relative aspect-square rounded-2xl overflow-hidden bg-secondary">
+                       <div className={`relative rounded-2xl overflow-hidden ${isSpecialImage ? 'p-8 bg-black' : 'aspect-square bg-secondary'}`}>
                         <Image
                           src={image.imageUrl}
                           alt={step.title || 'Process step image'}
-                          fill
-                          className="object-cover grayscale"
+                          width={isSpecialImage ? 600 : undefined}
+                          height={isSpecialImage ? 400 : undefined}
+                          fill={!isSpecialImage}
+                          className={`object-contain ${!isSpecialImage ? 'grayscale' : ''}`}
                           data-ai-hint={image.imageHint}
                         />
                       </div>
@@ -82,7 +84,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           <section className="mb-24 lg:mb-32">
             <div className="text-center max-w-3xl mx-auto">
               <h2 className="text-4xl font-bold mb-4 font-headline">Design Solution</h2>
-              <p className="mt-6 text-lg text-foreground/70 leading-relaxed whitespace-pre-line">{project.designSolution.description}</p>
+              <p className="mt-6 text-lg text-foreground/80 leading-relaxed whitespace-pre-line">{project.designSolution.description}</p>
             </div>
           </section>
 
@@ -90,7 +92,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           <section>
             <div className="text-center max-w-3xl mx-auto mb-16">
               <h2 className="text-4xl font-bold mb-4 font-headline">Final Visuals</h2>
-              <p className="text-foreground/70 leading-relaxed">A gallery of the final polished renders.</p>
+              <p className="text-foreground/80 leading-relaxed">A gallery of the final polished renders.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {project.finalVisuals.images.map(imageId => {
